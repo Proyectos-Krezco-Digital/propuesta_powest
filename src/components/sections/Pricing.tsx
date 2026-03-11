@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Check, Star, ArrowRight } from 'lucide-react';
+import { Check, Star } from 'lucide-react';
 import { Section } from '../layout/Section';
 import { MaxWidthWrapper } from '../layout/MaxWidthWrapper';
 

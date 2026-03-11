@@ -1,14 +1,11 @@
 import { motion } from 'framer-motion';
 import { 
-  CreditCard, 
   Landmark, 
-  PieChart, 
   ArrowRight, 
   DollarSign, 
   Calculator,
   Calendar,
   Clock,
-  ShieldCheck,
   Zap
 } from 'lucide-react';
 import { Link } from 'react-router-dom';

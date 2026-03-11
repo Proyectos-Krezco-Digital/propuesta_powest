@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Card } from '../ui/Card';
 import { CheckCircle2, XCircle } from 'lucide-react';
 
 const benchmarks = [

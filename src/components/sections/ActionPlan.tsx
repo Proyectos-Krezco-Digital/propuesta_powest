@@ -1,17 +1,14 @@
 import { motion } from 'framer-motion';
 import { 
-  CalendarDays, 
   CheckCircle2, 
   Rocket, 
   MessageSquareCode, 
   Users, 
   Terminal, 
   Star, 
-  ArrowRight,
   GanttChart,
   Clock,
   Presentation,
-  ShieldCheck,
   Zap
 } from 'lucide-react';
 
