@@ -1,0 +1,64 @@
+# Propuesta de Mantenimiento y Evolución Continua: PharmaPlus
+
+**Preparado para:** Dirección PharmaPlus  
+**Elaborado por:** Senior Architect & Product Lead  
+**Objetivo:** Garantizar disponibilidad del 99.9%, seguridad de grado farmacéutico y evolución constante del activo digital.
+
+---
+
+## 1. El Porqué de un Modelo Especializado
+PharmaPlus no es una web estática; es un sistema interconectado. Un error en el API de envíos o en el buscador de Supabase puede significar pérdida inmediata de ventas. 
+
+Recomiendo un modelo de **Fee Mensual Fijo (Retainer)** sobre un paquete de horas, porque el valor no está en "cuánto tiempo trabajo", sino en la **disponibilidad inmediata** y la **prevención de errores** antes de que ocurran.
+
+---
+
+## 2. Estructura de la Propuesta: Niveles de Servicio (SLA)
+
+### Nivel 1: Soporte Vital y Correctivo (Mantenimiento Base)
+*Este nivel asegura que la farmacia esté abierta y funcionando 24/7.*
+- **Monitoreo de Infraestructura:** Vigilancia de Vercel, Supabase y Redis.
+- **Actualizaciones de Seguridad:** Parches críticos en Next.js y dependencias de Node.js.
+- **Sincronización WC-Supabase:** Auditoría semanal de los 3,700+ productos para asegurar que precios y stock coincidan.
+- **Resolución de Bugs:** Corrección inmediata de errores que impidan la compra o el registro (Hotfixes).
+
+### Nivel 2: Evolución y Desarrollo Proactivo (Growth)
+*Este nivel asegura que la farmacia crezca y no se quede obsoleta.*
+- **Optimización de Conversión (CRO):** Pequeños cambios en UI/UX (como el ajuste del "ojito" o el captcha) basados en feedback.
+- **Mejoras en SEO Técnico:** Optimización constante de Core Web Vitals para mantener el ranking en Google.
+- **Nuevas Funcionalidades Pequeñas:** Creación de banners dinámicos, ajustes en cupones o nuevas secciones de marcas.
+
+### Nivel 3: Consultoría Estratégica
+- **Análisis de Rendimiento:** Informe mensual de velocidad y errores.
+- **Roadmap Tecnológico:** Propuesta de escalabilidad (ej: implementación de IA en el buscador o expansión a nuevos países).
+
+---
+
+## 3. Modelos de Contratación Recomendados
+
+### Opción A: "Seguridad Total" (Fee Fijo Mensual) - *RECOMENDADO*
+- **Incluye:** Todo el Nivel 1 + Nivel 3 + 20 horas de desarrollo del Nivel 2.
+- **Ventaja:** Presupuesto predecible. Tienes a un Senior Developer "en nómina" que conoce el ADN del proyecto.
+- **Ideal para:** PharmaPlus en su etapa actual de crecimiento agresivo.
+
+### Opción B: "Bajo Demanda" (Bolsa de Horas)
+- **Incluye:** Solo mantenimiento crítico (Nivel 1) + Cobro por horas adicionales.
+- **Ventaja:** Pagas solo lo que pides.
+- **Desventaja:** Menor tiempo de respuesta (no hay reserva de capacidad). Riesgo de sobrecostos en meses de mucho desarrollo.
+
+---
+
+## 4. Por qué un Perfil Senior para esta etapa
+A medida que el proyecto crece, el riesgo aumenta. Un desarrollador Junior o Mid puede romper la caché de Vercel o corromper la DB de Supabase por desconocer la arquitectura Headless. Mi propuesta incluye:
+1. **Conocimiento de Dominio:** Ya entiendo las "fórmulas" de OrbisFarma, Credibanco y el mapeo farmacéutico.
+2. **Arquitectura de Costos:** Mi enfoque siempre es optimizar el consumo de Vercel para que tu factura no suba injustificadamente.
+
+---
+
+## 5. Próximos Pasos Sugeridos
+1. **Definir Alcance:** ¿Cuántas funcionalidades nuevas prevemos al mes?
+2. **Acuerdo de Respuesta:** Definir tiempos de respuesta para emergencias (ej: < 4 horas para caídas totales).
+3. **Formalización:** Documentar el fee mensual y comenzar con el primer ciclo de mantenimiento proactivo.
+
+---
+> **Senior Verdict:** PharmaPlus es hoy un Ferrari tecnológico. No podemos dejarle el mantenimiento al taller de la esquina; necesita un equipo que entienda de alta ingeniería para que nunca deje de correr.

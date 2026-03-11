@@ -1,0 +1,340 @@
+A continuación, tienes estructurado el **100% del documento final**, distribuido exactamente en las 6 páginas o secciones (menús) que conformarán tu sitio web. No se ha omitido ni una sola coma del contenido que trabajamos12.
+
+Aquí tienes el contenido maestro listo para que lo integres en tu diseño web:
+
+\--------------------------------------------------------------------------------
+
+🏠 PÁGINA 1: INICIO (HOME)
+
+_Esta es la pantalla principal o "Hero Section" de tu micrositio web. Impacta desde el primer segundo._
+
+**0\. PORTADA Y PRESENTACIÓN TÉCNICA** **PROPUESTA TÉCNICA Y ECONÓMICA: ECOSISTEMA DIGITAL MULTIDOMINIO POWEST**3. **PROVEEDOR:** Gustavo Vargas Rubiano – iAnGo Agencia de Desarrollo y Automatización con IA3. **CLIENTE:** Diego Alejandro Pinzón – Chief Procurement Officer, Powest (Nicomar Electronics S.A.S)3. **FECHA:** 10 de marzo de 20263.
+
+**1\. INFORMACIÓN GENERAL DEL PROVEEDOR** **iAnGo** es la firma de consultoría y desarrollo liderada por **Gustavo Vargas Rubiano**, especialista en la convergencia de Inteligencia Artificial y arquitecturas escalables3. Con más de **11 años de experiencia** transformando operaciones digitales, iAnGo representa la evolución técnica de nuestra trayectoria previa en _Dazzle_3.
+
+-   **Razón Social:** Gustavo Vargas Rubiano (iAnGo Agencia de Desarrollo)4.-   **NIT:** \[Tu NIT\]4.-   **País y Ciudad:** Colombia / Bogotá D.C.4.-   **Contacto Técnico y Comercial:** Gustavo Vargas Rubiano4.-   **Evolución Estratégica:** iAnGo nace como una marca de especialización técnica pura, enfocada 100% en IA, automatizaciones y transformación digital de alto nivel, superando el modelo tradicional de diseño gráfico para ofrecer soluciones de ingeniería robusta4.
+
+**Experiencia Comprobable (Mínimo dos referencias)**4
+
+-   **Imbra Repuestos & Mapache Parts:** Orquestación de ecosistema digital integrando Shopify, Mercado Libre y **SAP Business One** mediante n8n para sincronización de stock y pedidos en tiempo real5.-   **PharmaPlus:** Reingeniería de sistema mediante arquitectura _Headless_ con WPGraphQL, logrando una carga instantánea y sincronización de alta frecuencia de datos críticos5.
+
+\--------------------------------------------------------------------------------
+
+🎯 PÁGINA 2: EL RETO
+
+_Una página dedicada a demostrar que entiendes su dolor y necesidad._
+
+**2\. ENTENDIMIENTO DEL PROYECTO (OBLIGATORIO)** Comprendemos claramente que la necesidad de Powest va mucho más allá de una página web tradicional; el objetivo central consiste en **desarrollar un sitio web institucional multilatina para POWEST (Colombia, México y Ecuador)**5. Entendemos que este proyecto es una pieza central para su expansión regional y debe funcionar como un verdadero **ecosistema digital de adquisición, conversión y posicionamiento técnico B2B**5.
+
+Nuestro entendimiento del proyecto y de los objetivos de negocio se fundamenta en los siguientes pilares:6
+
+-   **Segmentación Geográfica y Autonomía:** El sistema debe **permitir segmentación por país**6, garantizando que cada región tenga una **administración propia**6. Esto asegura que la identidad global de Powest se mantenga, pero habilitando experiencias localizadas (dialectos e inventarios específicos)6.-   **Experiencia de Usuario y Conversión:** Es vital **optimizar la experiencia de usuario (UX)**6 no solo de manera visual, sino enfocada en resultados. El ecosistema debe soportar activamente la **captación y conversión B2B**6, facilitando la conexión comercial rápida y efectiva.-   **Visión de Futuro y Escalabilidad:** Entendemos que la plataforma debe estar preparada para el crecimiento de la compañía, siendo **escalable a futuro por diferentes países (multi-idioma + dialectos + tendencias tecnológicas)**6.
+
+En resumen, comprendemos que el ecosistema digital será el motor principal para consolidar la reputación de la marca, entregar soporte técnico eficiente y multiplicar la adquisición de clientes corporativos en la región7.
+
+\--------------------------------------------------------------------------------
+
+🛠️ PÁGINA 3: ALCANCE DEL PROYECTO
+
+_Esta será la página más robusta_8_. Puedes usar pestañas (Tabs) o un menú lateral para cada bloque numérico._
+
+**3\. ALCANCE PROYECTO (OBLIGATORIO)**7
+
+_(Pestaña/Sección 1)_ **3.1 Alcance Técnico** Nuestra propuesta se fundamenta en una **Arquitectura Headless CMS**, la cual separa el administrador de contenidos del diseño visual7. A continuación, detallamos el cumplimiento estricto de cada requerimiento técnico exigido para el ecosistema digital:7
+
+**3.1.1 Arquitectura técnica de la solución**
+
+-   **Detalle Técnico:** Implementaremos _WordPress Multisite_ como motor de Backend y _Next.js_ (basado en React) para el Frontend, comunicados mediante API para lograr una compilación estática inmediata9.-   **Explicación corporativa:** Esta separación de entornos permite a Powest gestionar su contenido desde un panel altamente intuitivo, respaldado por la potencia de una plataforma moderna de última tecnología que garantiza tiempos de respuesta inmediatos y escalabilidad absoluta9.
+
+**3.1.2 Infraestructura de seguridad (Certificados SSL)**
+
+-   **Detalle Técnico:** Implementación y configuración de Certificados SSL de grado corporativo (cifrado TLS de extremo a extremo) para todos los dominios y subdominios del ecosistema (powest.mx, powest.ec, powest.com.co)10.-   **Explicación corporativa:** Esto asegura que cualquier transferencia de datos e información de clientes B2B viaje estrictamente encriptada, protegiendo la integridad y reputación digital de la marca en toda la región10.
+
+**3.1.3 Consideraciones de seguridad y performance**
+
+-   **Detalle Técnico:** Al usar arquitectura Headless, el Frontend carece de conexión directa con la base de datos SQL, haciéndolo prácticamente invulnerable a inyecciones o ataques comunes11. El performance se maximiza mediante la generación de sitios estáticos (SSG) en Next.js11.-   **Explicación corporativa:** El resultado es un ecosistema digital blindado y con tiempos de carga optimizados al máximo, un factor decisivo para retener el tráfico corporativo sin demoras en la navegación11.
+
+**3.1.4 Compatibilidad con navegadores y dispositivos**
+
+-   **Detalle Técnico:** Desarrollo 100% _Responsive Design_ con optimización de renderizado12. Garantizamos un funcionamiento y visualización impecable en Google Chrome, Safari, Edge y Firefox, adaptándose automáticamente a dispositivos móviles (iOS y Android)12.-   **Explicación corporativa:** Aseguramos que los tomadores de decisiones puedan acceder al portafolio completo con una experiencia de usuario perfecta desde cualquier equipo comercial corporativo o dispositivo móvil12.
+
+**3.1.5 Ambientes incluidos (desarrollo, pruebas, producción)**
+
+-   **Detalle Técnico:** Habilitaremos tres entornos de trabajo corporativos completamente aislados: 1. Ambiente de Desarrollo (para despliegue de código fuente), 2. Ambiente de Pruebas / Staging (para control de calidad) y 3. Ambiente de Producción (sitio en vivo)13.-   **Explicación corporativa:** Esta estructura permite que el equipo de Powest pueda revisar, aprobar y validar cualquier cambio o actualización en un entorno seguro antes de que sea visible para el público general13.
+
+**3.1.6 Manejo de versiones y despliegues**
+
+-   **Detalle Técnico:** Utilizaremos repositorios de código centralizados (Git) y flujos de integración continua14.-   **Explicación corporativa:** Llevamos un control riguroso de cada actualización, asegurando que las futuras mejoras o integraciones tecnológicas se implementen de forma controlada y sin generar caídas en el servicio público (_Zero Downtime_)14.
+
+**3.1.7 Estructura en la administración propia por País**
+
+-   **Detalle Técnico:** A través del núcleo de _WordPress Multisite_, habilitaremos una infraestructura centralizada con despliegues distribuidos14. Cada dominio (Colombia, México, Ecuador) operará con total independencia14.-   **Explicación corporativa:** Esto permite que los equipos locales gestionen sus propios inventarios, banners y dialectos de forma autónoma, sin riesgo de afectar la configuración o el ecosistema de los demás países14.
+
+**3.1.8 Soporte y administración de página web - Niveles De Administración**
+
+-   **Detalle Técnico:** Implementación de Control de Acceso Basado en Roles (RBAC)15. El sistema contará con un nivel de "Súper Administrador" global para Powest matriz, junto con administradores locales restringidos exclusivamente al entorno de su respectivo país15.-   **Explicación corporativa:** Garantizamos el control total desde la matriz corporativa y, al mismo tiempo, mantenemos el orden operativo local, evitando alteraciones accidentales de información cruzada entre sucursales15.
+
+**3.1.9 Llave en mano del proyecto web**
+
+-   **Detalle Técnico:** Despliegue de un ecosistema multidominio 100% funcional, probado, integrado y documentado bajo la modalidad llave en mano16.-   **Explicación corporativa:** Entregamos una solución tecnológica integral y operativa desde el día uno, sin costos ocultos y lista para que Powest inicie de inmediato su estrategia de captación comercial a nivel regional16.
+
+_(Pestaña/Sección 2)_ **3.2 Alcance de contenido y catálogo (OBLIGATORIO)** Entendemos que el portafolio de Powest está dirigido a un sector especializado (B2B)16. Por ello, el catálogo no será una simple vitrina estática, sino un motor de consulta avanzado diseñado para capturar leads corporativos16. Cubriremos al 100% los requerimientos exigidos de la siguiente manera:16
+
+**3.2.1 Páginas espejo cada una con dominio propio (ej: México .mx, Ecuador .ec)**
+
+-   **Detalle Técnico:** Despliegue de instancias independientes en la arquitectura Headless para cada dominio (powest.mx, powest.ec, powest.com.co)17. El sistema detectará y servirá el contenido correspondiente sin aplicar redireccionamientos forzados17.-   _Explicación corporativa:_ Garantizamos que cada país tenga su propia identidad digital nativa17. Esto es vital para el posicionamiento orgánico (SEO) en Google, asegurando que un cliente en México vea la página optimizada para su región, con su dialecto y sus asesores locales17.
+
+**3.2.2 Carga inicial de hasta 300 productos (No es un e-commerce)**
+
+-   **Detalle Técnico:** Migración, estructuración y poblamiento de la base de datos en el Backend con el inventario inicial de hasta 300 referencias estipuladas18. Al prescindir de pasarelas de pago transaccionales, la base de datos se optimiza estrictamente para la velocidad de consulta y generación de leads18.-   _Explicación corporativa:_ Entregamos la plataforma completamente alimentada y lista para operar18. Su equipo no tendrá que digitar el inventario inicial desde cero; nosotros dejamos el ecosistema estructurado para que su fuerza comercial comience a trabajar el mismo día del lanzamiento18.
+
+**3.2.3 Fichas técnicas completas**
+
+-   **Detalle Técnico:** Desarrollo de plantillas dinámicas en el Frontend (Next.js) para renderizar instantáneamente las especificaciones, tablas de atributos y descripciones detalladas de cada referencia19.-   _Explicación corporativa:_ Cada producto contará con una presentación de alto perfil técnico19. Está diseñada para que los ingenieros o jefes de compras de sus clientes encuentren toda la información que necesitan en milisegundos, sin tiempos de espera19.
+
+**3.2.4 Filtros avanzados y Búsqueda Inteligente**
+
+-   **Detalle Técnico:** Implementación de una base de datos espejo en **Supabase** para realizar un _LiveSearch_ (búsqueda en vivo) perfecto20. Este motor de búsqueda funciona con inteligencia y en tiempo real de manera ultrarrápida20. Si el cliente busca, por ejemplo, la palabra "solares", el buscador no espera a que el usuario termine de teclear; inmediatamente entiende la intención y le trae todos los productos que contengan esa coincidencia, procesando la información con una latencia casi nula20.-   _Explicación corporativa:_ Llevamos la experiencia de búsqueda a un nivel superior20. Sus clientes corporativos no tendrán que dar clic en "buscar" ni esperar a que cargue una página de resultados20. Mientras el comprador va escribiendo el nombre del equipo, la plataforma ya le está mostrando las opciones correctas en pantalla20. Esto reduce la fricción, ahorra tiempo valioso y acelera radicalmente la ruta hacia la cotización20.
+
+**3.2.5 Botones de acción por país (Cotización Inteligente)**
+
+-   **Detalle Técnico:** Programación de scripts de enrutamiento dinámico y lógica geográfica anclados a la API de WhatsApp Business21. El sistema lee el país de origen y la URL del producto activo para direccionar el requerimiento21.-   _Explicación corporativa:_ Transformamos un simple botón en una máquina de conversión directa21. Si un cliente en Ecuador está viendo una UPS y hace clic en "Cotizar", el sistema abre su WhatsApp enviando el contacto directamente al celular del asesor ecuatoriano, con un mensaje automático que indica exactamente qué equipo está visualizando21. Esto elimina fricciones y asegura que la oportunidad de negocio se atienda de inmediato21.
+
+**3.2.6 Arquitectura de contenido de producto (Categoría Madre, Subcategoría, Categoría)**
+
+-   **Detalle Técnico:** Modelado relacional estricto en el Gestor de Contenido (WordPress Multisite) que respeta y refleja la taxonomía jerárquica exigida: Categoría Madre > Subcategoría > Categoría22.-   _Explicación corporativa:_ Aseguramos que el catálogo tenga un orden lógico y altamente escalable22. Si el día de mañana Powest decide abrir nuevas líneas de negocio, la plataforma soportará este crecimiento manteniendo la información perfectamente estructurada y fácil de administrar22.
+
+**3.2.7 Recursos descargables**
+
+-   **Detalle Técnico:** Integración de un gestor de adjuntos dentro de la estructura de cada ficha técnica, optimizado para la entrega de archivos estáticos (PDFs, manuales, certificaciones) desde servidores de alta velocidad23.-   _Explicación corporativa:_ Facilitamos la labor del comprador B2B, permitiéndole descargar con un solo clic los manuales de usuario y las certificaciones (RETIE, ISO, etc.) que necesitan para incluir a Powest en sus procesos de licitación corporativa23.
+
+_(Pestaña/Sección 3)_ **3.3 Alcance Integraciones (OBLIGATORIO)** Para que el ecosistema digital funcione como una verdadera máquina de adquisición B2B, es imperativo que esté interconectado con las herramientas analíticas y comerciales de la compañía24. Gracias a la potencia de nuestra plataforma moderna de última tecnología, garantizamos el despliegue de las siguientes integraciones24:
+
+**3.3.1 Integración con CRM para leads**
+
+-   **Detalle Técnico:** Conexión segura (vía API/Webhooks) entre el Frontend (Next.js) y el CRM actual de Powest24. Esto asegura la transmisión de datos en tiempo real de todos los puntos de conversión del sitio, incluyendo formularios de contacto y la captura de intención a través de los scripts del botón de WhatsApp24.-   **Explicación corporativa:** Automatizamos su embudo de ventas24. Cada vez que un cliente corporativo solicite una cotización, la información viajará de forma inmediata a su sistema comercial, permitiendo a los asesores actuar al instante y cerrar negocios sin perder ninguna oportunidad24.
+
+**3.3.2 Google Analytics 4**
+
+-   **Detalle Técnico:** Implementación y configuración avanzada de propiedades de GA4 por dominio local (Colombia, México, Ecuador) y vistas consolidadas25. Se incluirá la parametrización de eventos de conversión clave (clics de cotización, descargas de fichas técnicas, envíos de formularios)25.-   **Explicación corporativa:** Proporcionamos inteligencia de negocios basada en datos25. Powest podrá medir con precisión el tráfico corporativo, el comportamiento de los usuarios y el rendimiento exacto de cada país, facilitando la toma de decisiones estratégicas basadas en resultados reales25.
+
+**3.3.3 Tag Manager**
+
+-   **Detalle Técnico:** Inserción del contenedor de Google Tag Manager (GTM) en la arquitectura Headless para la gestión centralizada de scripts de seguimiento, píxeles de marketing y etiquetas de terceros, cargados de forma asíncrona para no afectar el performance del sitio26.-   **Explicación corporativa:** Otorgamos agilidad extrema a su equipo de marketing26. Podrán lanzar campañas, instalar herramientas de medición o integrar nuevas plataformas publicitarias en cuestión de minutos y de forma autónoma, sin depender de un programador para alterar el código de la página26.
+
+**3.3.4 Microsoft Clarity**
+
+-   **Detalle Técnico:** Integración nativa del script de Microsoft Clarity para la generación de mapas de calor (heatmaps) y grabaciones de sesiones de usuario, respetando el rendimiento de carga y las políticas de privacidad de datos27.-   **Explicación corporativa:** Entregamos visibilidad visual total sobre cómo interactúan los clientes B2B con el catálogo27. Al ver exactamente dónde hacen clic, qué leen y dónde abandonan la navegación, Powest tendrá las herramientas para optimizar continuamente la página y maximizar la captación de leads27.
+
+**3.3.5 Search Console**
+
+-   **Detalle Técnico:** Verificación de propiedad para los entornos multidominio y vinculación de sitemaps dinámicos XML generados por la plataforma Headless28. Esto garantiza la correcta indexación de las URLs limpias y el monitoreo de la salud técnica en los resultados de búsqueda orgánica28.-   **Explicación corporativa:** Aseguramos el control absoluto sobre la presencia digital de Powest en Google28. Esta herramienta es vital para dominar los resultados de búsqueda y garantizar que sus equipos de energía aparezcan como la primera opción cuando los directores de compras realicen consultas técnicas28.
+
+**3.3.6 Integración API para desarrollos e integraciones**
+
+-   **Detalle Técnico:** Disponibilización de endpoints seguros (API REST / GraphQL) desde el núcleo de la arquitectura Headless CMS, permitiendo la comunicación bidireccional y el consumo estructurado del inventario y contenidos por parte de aplicaciones externas29.-   **Explicación corporativa:** Preparamos a Powest para el futuro29. Al contar con una arquitectura moderna basada en APIs, el ecosistema digital queda listo para conectarse sin problemas con futuros sistemas ERP corporativos, aplicaciones móviles o nuevas tecnologías, garantizando una escalabilidad absoluta a largo plazo29.
+
+_(Pestaña/Sección 4)_ **3.4 Alcance de Internacionalización y adquisición digital (OBLIGATORIO)** Garantizamos el cumplimiento estricto del **Mínimo SEO Viable (MSV)** mediante una estrategia técnica avanzada, estructurada específicamente para ecosistemas corporativos B2B30. A continuación, detallamos las actividades incluidas para dominar los motores de búsqueda tradicionales y las nuevas herramientas de Inteligencia Artificial:
+
+**3.4.1 Optimización técnica**
+
+-   **Detalle Técnico:** Renderizado del lado del servidor (SSR) y generación de sitios estáticos (SSG) mediante Next.js, inyección dinámica de meta-etiquetas (Title, Description, Robots) y cumplimiento de los estándares _Core Web Vitals_ de Google30.-   **Explicación corporativa:** Aseguramos que la plataforma cumpla con los estándares técnicos más estrictos de la industria30. Esto garantiza que los algoritmos de búsqueda puedan leer, entender y clasificar el catálogo de Powest sin ningún obstáculo, maximizando su visibilidad orgánica30.
+
+**3.4.2 Optimización de imágenes (WebP)**
+
+-   **Detalle Técnico:** Conversión automática de los recursos gráficos a formatos de próxima generación (WebP)31. Al operar bajo una arquitectura _Headless_, el Frontend no almacena ni procesa físicamente las imágenes; todas están alojadas y centralizadas de forma independiente en el Backend de WordPress Multisite31. Estas se sirven al usuario final mediante peticiones optimizadas con carga diferida (_Lazy Loading_)31.-   **Explicación corporativa:** Aprovechamos la máxima ventaja de nuestra tecnología: la página que ven sus clientes no carga con el peso de cientos de fotografías en su código31. Como las imágenes viven separadas en la "bóveda" de administración, reducimos drásticamente el peso de la página31. Esto asegura que el catálogo visual cargue al instante, evitando que los clientes corporativos abandonen el sitio por demoras, incluso si navegan desde redes móviles en plantas industriales31.
+
+**3.4.3 Cache y optimización de código**
+
+-   **Detalle Técnico:** Minificación agresiva de archivos JavaScript y CSS, eliminación de código bloqueante y despliegue del ecosistema sobre una red de entrega de contenidos (CDN) global (_Edge Caching_)32.-   **Explicación corporativa:** La plataforma "pre-construye" las páginas y las guarda en servidores ultrarrápidos32. Cuando un cliente corporativo ingresa, el sitio no tiene que pensar, simplemente entrega la información de inmediato32. Esta velocidad extrema es premiada directamente por Google con mejores posiciones de búsqueda32.
+
+**3.4.4 Sitemaps**
+
+-   **Detalle Técnico:** Generación y actualización automatizada de mapas de sitio dinámicos en formato XML por cada dominio independiente33. El sistema enviará pings automáticos a los motores de búsqueda tras cada actualización de contenido en el Backend33.-   **Explicación corporativa:** Creamos un mapa directo para Google33. Cada vez que Powest agregue una nueva UPS o modifique una ficha técnica, los buscadores serán notificados de inmediato, asegurando que su nuevo portafolio aparezca en los resultados de búsqueda sin semanas de retraso33.
+
+**3.4.5 URLs limpias**
+
+-   **Detalle Técnico:** Implementación de enrutamiento semántico y jerárquico (ej. _dominio.mx/categoria/nombre-del-producto_) eliminando variables dinámicas, parámetros de sesión o cadenas de texto ilegibles en la barra de direcciones34.-   **Explicación corporativa:** Construimos enlaces lógicos y descriptivos que son fáciles de leer tanto para los ingenieros que comparten la información, como para los motores de búsqueda que analizan de qué trata cada página34.
+
+**3.4.6 SEO estructurado**
+
+-   **Detalle Técnico:** Implementación de microdatos bajo el estándar Schema.org35. Se inyectará marcado JSON-LD específico para productos B2B, organizaciones y migas de pan (_breadcrumbs_) en todo el ecosistema35.-   **Explicación corporativa:** Traducimos el catálogo técnico de Powest al lenguaje exacto que hablan los algoritmos35. Esto permite que Google muestre resultados enriquecidos de sus equipos (como valoraciones o especificaciones clave) directamente en la página de resultados, destacando frente a la competencia35.
+
+**3.4.7 Indexación en Google y Bing**
+
+-   **Detalle Técnico:** Vinculación directa mediante API con _Google Search Console_ y _Bing Webmaster Tools_36. Configuración de reglas de rastreo (_robots.txt_) optimizadas para priorizar el presupuesto de rastreo de las arañas de búsqueda en los catálogos de productos36.-   **Explicación corporativa:** No esperamos a que los buscadores nos encuentren por casualidad; empujamos proactivamente el ecosistema digital a los dos motores de búsqueda corporativos más importantes del mundo para asegurar su indexación prioritaria36.
+
+**3.4.8 Keywords, enlaces internos y externos**
+
+-   **Detalle Técnico:** Arquitectura de _interlinking_ dinámico automatizado desde el Headless CMS37. Habilitación de campos estructurados en WordPress para la gestión local de palabras clave de concordancia exacta y semántica latente (LSI) por país37.-   **Explicación corporativa:** Conectamos lógicamente los equipos y categorías dentro de la página, guiando al cliente en su proceso de compra y demostrándole a Google que Powest es la autoridad definitiva y la fuente de información más completa en soluciones de energía37.
+
+**3.4.9 Optimización de formularios**
+
+-   **Detalle Técnico:** Formularios de captura construidos de forma asíncrona (AJAX) sin recarga de página (_Zero Layout Shift_), protegidos con validación _Honeypot_ (anti-spam invisible) para no afectar la conversión con molestos Captchas gráficos38.-   **Explicación corporativa:** Eliminamos toda fricción en el momento de la verdad38. Si un director de compras decide contactarlos, el proceso será seguro, instantáneo y fluido, elevando drásticamente la tasa de captura de leads38.
+
+**3.4.10 GEO - Posicionamiento en IA de Internacionalización**
+
+-   **Detalle Técnico:** Implementación estricta de etiquetas _Hreflang_ y marcado geográfico JSON-LD avanzado39. Configuración de enrutamiento nativo desde el servidor para que los dominios locales (powest.mx, powest.com.mx, powest.ec, powest.com.ec) sean indexados como entidades soberanas e independientes, sin aplicar redirecciones al dominio global39.-   **Explicación corporativa:** Esta es la joya de la corona de nuestra arquitectura39. Garantizamos que los motores tradicionales y las nuevas inteligencias artificiales (ChatGPT, Copilot, Gemini) entiendan perfectamente la soberanía de cada país39. Si un usuario en México o una IA consultando para ese mercado busca a Powest, el sistema entregará y recomendará la URL mexicana nativa y su dialecto correspondiente39. Al no forzar redirecciones, evitamos que los bots de IA se confundan, asegurando que Powest domine las respuestas de la Inteligencia Artificial en toda la región39.
+
+_(Pestaña/Sección 5)_ **3.5 Alcance Documentación (OBLIGATORIO)** El proveedor se compromete con la entrega de toda la documentación necesaria para asegurar la independencia tecnológica de Powest40. Cada entregable ha sido diseñado para cubrir las necesidades operativas, técnicas y estratégicas del ecosistema:
+
+**3.5.1 Documentación técnica (Workbook de configuración)**
+
+-   **Detalle Técnico:** Creación de un _Workbook_ detallado que documenta la configuración del entorno _Headless_, parámetros del servidor, variables de entorno en Next.js, configuración del multisitio en WordPress y credenciales cifradas de las APIs integradas40.-   **Explicación corporativa:** Entregamos el "ADN" técnico de la plataforma40. Este documento asegura que el equipo de tecnología de Powest tenga el control absoluto y el conocimiento exacto de cómo está configurado el ecosistema, garantizando su autonomía e independencia frente a cualquier proveedor40.
+
+**3.5.2 Manual de administración del sitio**
+
+-   **Detalle Técnico:** Documentación exhaustiva sobre la gestión de roles y permisos (RBAC), creación de nuevas instancias para futuras expansiones regionales, administración central de la base de datos de productos y gestión de la seguridad del entorno41.-   **Explicación corporativa:** Es la guía especializada para su "Súper Administrador" global41. Con este manual, la matriz de Powest tendrá las directrices claras para gobernar la plataforma a nivel regional, abrir nuevos mercados y mantener la seguridad de todo el ecosistema corporativo sin contratiempos41.
+
+**3.5.3 Manual de usuario de funcionamiento, administración y cambios Página Web**
+
+-   **Detalle Técnico:** Guías operativas paso a paso enfocadas en la interfaz de gestión visual ("No-Code") para la actualización de inventarios, modificación de banners, carga de archivos descargables y gestión de metadatos SEO/Keywords42.-   **Explicación corporativa:** Es el manual del día a día para sus equipos de marketing y ventas locales42. Está redactado en un lenguaje claro y práctico para que cualquier colaborador, sin conocimientos de programación, pueda actualizar catálogos, cambiar imágenes o publicar nuevos equipos de forma autónoma e inmediata42.
+
+**3.5.4 Diagramas o arquitectura del diseño**
+
+-   **Detalle Técnico:** Entrega de diagramas de arquitectura de software y red, detallando la topología de la infraestructura, los flujos de datos entre el Frontend (Next.js) y el Backend (WordPress Multisite), así como diagramas de secuencia de las integraciones API y el enrutamiento de WhatsApp43.-   **Explicación corporativa:** Proporcionamos un mapa visual de todo el ecosistema digital43. Esto es vital para futuras auditorías de seguridad, procesos de certificación de calidad o para el momento en que Powest decida escalar conectando nuevos softwares corporativos a la plataforma43.
+
+**3.5.5 Acta de cierre del proyecto y entrega a conformidad**
+
+-   **Detalle Técnico:** Formalización del despliegue a producción mediante un documento técnico y legal que valida la ejecución del 100% de los requerimientos funcionales, las integraciones estipuladas, las pruebas de calidad (QA) y la entrega de todos los artefactos de software44.-   **Explicación corporativa:** Culminamos el proyecto con total transparencia y rigor profesional44. Este documento certifica que Powest recibe un producto llave en mano, probado, documentado y funcionando a la perfección, marcando el inicio exitoso de su nueva estrategia digital y activando formalmente los tiempos de garantía pactados44.
+
+_(Pestaña/Sección 6)_ **3.6 Alcance de Pruebas (OBLIGATORIO)** Para garantizar un lanzamiento impecable y sin interrupciones operativas, ejecutaremos una rigurosa etapa de Control de Calidad (QA) en el Ambiente de Pruebas (Staging) antes del despliegue a Producción45. A continuación, detallamos las validaciones técnicas que realizaremos:
+
+**3.6.1 Pruebas completas de Usabilidad para los 3 países**
+
+-   **Detalle Técnico:** Ejecución de pruebas funcionales multiplataforma (End-to-End) en el Frontend (Next.js), aislando las instancias de Colombia, México y Ecuador para verificar tiempos de renderizado, fluidez de interactividad y correcta carga de recursos localizados según el dominio consultado45.-   **Explicación corporativa:** Nos aseguramos de que el ecosistema funcione a la perfección sin importar desde dónde se conecte su cliente45. Validaremos rigurosamente que la experiencia visual y de navegación sea impecable, rápida e idéntica en calidad para el mercado mexicano, ecuatoriano y colombiano45.
+
+**3.6.2 Formularios – Pop ups**
+
+-   **Detalle Técnico:** Pruebas de validación de captura de datos asíncrona (AJAX) en los componentes de Next.js46. Comprobación de disparadores (_triggers_) de ventanas emergentes según reglas de negocio, asegurando que los leads fluyan correctamente hacia el CRM vía API sin generar bloqueos en la interfaz46.-   **Explicación corporativa:** Revisamos cada punto de contacto comercial46. Verificamos que si un director de compras llena un formulario o interactúa con un mensaje emergente, la información se guarde de forma segura y llegue de inmediato a su equipo de ventas, sin que la página se congele o falle46.
+
+**3.6.3 WhatsApp Business anclado**
+
+-   **Detalle Técnico:** Auditoría exhaustiva de los scripts de enrutamiento dinámico47. Simularemos peticiones desde diferentes direcciones IP geolocalizadas para confirmar que la lógica del sistema detecte el país y la URL activa, dirigiendo el evento exactamente al número telefónico de la sucursal correspondiente47.-   **Explicación corporativa:** Ponemos a prueba nuestra máquina de conversión directa47. Simularemos ser clientes de diferentes países para garantizar que, al hacer clic en el botón de cotización, el sistema conecte al comprador B2B instantáneamente con el asesor comercial correcto, llevando el mensaje del equipo pre-escrito47.
+
+**3.6.4 Políticas**
+
+-   **Detalle Técnico:** Verificación de la accesibilidad, correcto enlazado interno y despliegue de los documentos de términos, condiciones y políticas de privacidad adaptados a los dominios espejo, garantizando que el diseño _responsive_ no afecte la lectura de textos legales48.-   **Explicación corporativa:** Blindamos a Powest legalmente48. Comprobamos que todos los avisos legales, políticas de _cookies_ y tratamiento de datos estén visibles y funcionen correctamente en cada país, asegurando el cumplimiento normativo en el manejo de la información corporativa48.
+
+**3.6.5 Fichas técnicas**
+
+-   **Detalle Técnico:** Validación de la renderización dinámica de los atributos técnicos desde el _Headless CMS_ hacia el Frontend49. Se ejecutará una revisión de los enlaces de recursos descargables (PDFs, manuales) almacenados en los servidores de alta velocidad, comprobando que no existan errores 40449.-   **Explicación corporativa:** Revisamos exhaustivamente el corazón de su portafolio49. Nos aseguramos de que cada especificación de producto cargue correctamente y que los ingenieros de sus clientes puedan descargar los manuales o certificados en milisegundos, sin enlaces rotos49.
+
+**3.6.6 Script de pruebas documentado**
+
+-   **Detalle Técnico:** Consolidación de un documento formal de QA (_Quality Assurance_), detallando los casos de prueba ejecutados, los escenarios de validación multiplataforma, los resultados obtenidos en el entorno de _Staging_ y la firma técnica de aprobación para autorizar el paso a Producción50.-   **Explicación corporativa:** No dejamos nada al azar ni a la suposición50. Entregaremos a su equipo una bitácora formal que demuestra qué probamos, cómo lo probamos y los resultados exitosos obtenidos50. Esto les dará la tranquilidad y certeza absoluta de que el ecosistema está completamente listo para salir al aire50.
+
+_(Pestaña/Sección 7)_ **3.7 Alcance Capacitación (OBLIGATORIO)** Para garantizar la correcta apropiación tecnológica y asegurar que Powest opere el nuevo ecosistema con total autonomía desde el día uno, ejecutaremos un plan de transferencia de conocimiento de alto impacto51. Cubriremos todos los requerimientos exigidos de la siguiente manera:
+
+**3.7.1 Tipo de capacitación: Usuario y Técnica**
+
+-   **Detalle Técnico:** Ejecución de dos frentes de formación basados en el Control de Acceso por Roles (RBAC)51. Un frente "Técnico" dirigido a TI (gobernanza del Headless, Next.js y configuraciones del servidor) y un frente de "Usuario" dirigido a administradores locales (gestión de contenido en WordPress Multisite)51.-   **Explicación corporativa:** Capacitamos a su equipo en dos niveles estratégicos51. El área de tecnología entenderá cómo administrar el "motor" y la seguridad de la plataforma, mientras que el área de mercadeo y ventas aprenderá a actualizar el catálogo B2B en el día a día sin necesidad de saber programar51.
+
+**3.7.2 Temarios incluidos**
+
+-   **Detalle Técnico:** El plan de estudios abarca estrictamente el currículo exigido: Modificación de banners, textos e imágenes adaptables; Gestión avanzada de etiquetas y _keywords_ para optimización SEO/IA; y la sustentación y Entrega del _Workbook_ para la entrega técnica52.-   **Explicación corporativa:** Les entregamos las llaves del negocio digital52. Su equipo sabrá exactamente cómo cambiar promociones, publicar nuevos equipos de energía y dominar las palabras clave para que Powest siga liderando los resultados en Google y herramientas de Inteligencia Artificial52.
+
+**3.7.3 Modalidad: Virtual (Sincrónica y Asincrónica)**
+
+-   **Detalle Técnico:** Ejecución a través de plataformas de videoconferencia corporativa, con grabación en alta definición de todas las sesiones en vivo para la conformación de una base de conocimiento perpetua en video53.-   **Explicación corporativa:** Al tratarse de un ecosistema multilatina, la modalidad virtual nos permite unificar al personal de Colombia, México y Ecuador en una misma sala53. Además, al grabar las sesiones, Powest no tendrá que volver a pagar por capacitación si el día de mañana ingresa un nuevo empleado a la compañía53.
+
+**3.7.4 Número de sesiones (12 sesiones min.) y Duración (2 horas min.)**
+
+-   **Detalle Técnico:** Estructuración de un plan de 24 horas totales (12 sesiones de 2 horas mínimo) divididas metodológicamente para optimizar el despliegue ágil54. El esquema se compone de **5 Sesiones Sincrónicas en vivo** (10 horas de transferencia de conocimiento directa) y **7 Sesiones Asincrónicas prácticas** (14 horas de ejecución), donde el equipo ejecutará talleres en el ambiente de _Staging_ apoyados en los manuales interactivos54.-   **Explicación corporativa:** Cumplimos con el volumen de capacitación exigido, pero con una metodología inteligente54. Propusimos 5 sesiones teóricas en vivo y 7 sesiones de práctica porque, en un cronograma de máximo 4 semanas, tener a su equipo encerrado en 12 sesiones puramente teóricas les quita un tiempo valioso de ejecución a ustedes54. Es suficiente con 10 horas sincrónicas para entender perfectamente la plataforma; preferimos darles ese conocimiento directo y dejar que utilicen las 14 horas restantes para practicar a su ritmo con escenarios reales54.
+
+**3.7.5 Cantidad de usuarios a capacitar (Mínimo 6 personas)**
+
+-   **Detalle Técnico:** Aprovisionamiento de credenciales individuales en el Ambiente de Pruebas (_Staging_) para un mínimo de 6 usuarios concurrentes durante la etapa de formación, permitiendo simulaciones en tiempo real sin riesgo sobre la base de datos de producción55.-   **Explicación corporativa:** Garantizamos que el conocimiento no quede centralizado en una sola persona55. Entrenaremos simultáneamente a los líderes clave de cada país (mínimo 6 colaboradores) para que cada sede regional tenga un experto capaz de administrar su respectivo dominio con total seguridad e independencia55.
+
+\--------------------------------------------------------------------------------
+
+🛡️ PÁGINA 4: SOPORTE Y GARANTÍAS
+
+_Una página diseñada para generar confianza en las áreas de TI y Compras_56_._
+
+**4\. SOPORTE, GARANTÍAS Y POST IMPLEMENTACIÓN (OBLIGATORIO)** Garantizamos el respaldo absoluto sobre la arquitectura y el código entregado57. Nuestro esquema de soporte está diseñado para proteger la continuidad del negocio y asegurar la estabilidad del ecosistema multidominio desde el primer segundo en producción57:
+
+**4.1 Tiempo de garantía del desarrollo: 6 meses**
+
+-   **Detalle Técnico:** Cobertura integral de 6 meses estrictamente sobre el código fuente construido, entregado y aprobado (Frontend en Next.js y Backend en WordPress Multisite)57. Esta garantía aplica exclusivamente para la corrección de fallos (_bugs_) sobre la versión final liberada57.-   **Explicación corporativa:** Respaldamos al 100% la calidad de la ingeniería que entregamos57. Durante medio año, Powest cuenta con nuestra garantía total sobre el funcionamiento estructural de la plataforma aprobada57. Es importante aclarar que esto no incluye desarrollos nuevos o funcionalidades adicionales durante este periodo57. Si a futuro desean nuevas integraciones u otro tipo de mantenimiento evolutivo, ofrecemos propuestas personalizadas con un _fee_ mensual o paquetes de horas de desarrollo57.
+
+**4.2 Alcance del soporte post salida a producción**
+
+-   **Detalle Técnico:** Despliegue de un esquema de estabilización crítica (_Hypercare_) durante la primera semana máxima post-lanzamiento en producción58. Este esquema se ejecutará mediante sesiones diarias de mínimo 40 minutos para el monitoreo de performance y asistencia en vivo al equipo operativo58.-   **Explicación corporativa:** No los dejamos solos al momento de salir al aire58. Estaremos codo a codo con su equipo durante la primera semana, dedicando sesiones diarias de 40 minutos para asegurar que la plataforma opere perfectamente en el entorno real y resolviendo cualquier duda operativa al instante58.
+
+**4.3 SLA (Tiempos de atención y solución) 24/7**
+
+-   **Detalle Técnico:** Implementación de un SLA 24/7 enlazado a la garantía de 6 meses, exclusivo para incidentes críticos que comprometan la disponibilidad del sitio en vivo (caídas de entorno estrictamente atribuibles a nuestro código)59. Las fallas no críticas o problemas de conexión originados por la caída de plataformas de terceros (ej. desconexión de su CRM propio o APIs de Email Marketing) quedan excluidas de la respuesta inmediata y se gestionarán bajo programación regular59.-   **Explicación corporativa:** Nuestra prioridad es que su ecosistema digital nunca deje de vender59. Si ocurre una emergencia crítica que "tumbe" la página por causa de nuestro desarrollo, nuestro equipo intervendrá inmediatamente (24/7) para mantener el sitio en vivo59. Sin embargo, para incidentes menores o fallas que dependan de sistemas externos (como que los servidores de su CRM presenten intermitencia), el soporte se agenda y soluciona mediante un cronograma de trabajo estándar en horarios hábiles59.
+
+**4.4 Qué tipo de incidentes cubre**
+
+-   **Detalle Técnico:** La garantía cubre exclusivamente anomalías funcionales (_bugs_) sobre el desarrollo ya implementado y aprobado, desajustes críticos de renderizado que impidan la navegación, y errores en la arquitectura propia entregada que afecten la operabilidad del ecosistema60.-   **Explicación corporativa:** En perfecta alineación con el punto anterior, cubrimos cualquier problema que se origine directamente en la estructura que nosotros construimos60. Esto asegura que la base del proyecto funcione con la misma precisión del día del lanzamiento, separando claramente nuestra responsabilidad técnica frente a las fallas naturales que puedan tener plataformas de terceros60.
+
+**4.5 Canales de atención**
+
+-   **Detalle Técnico:** Centralización y trazabilidad de solicitudes a través de tres canales oficiales corporativos: **WhatsApp** (para reportes ágiles), **Correo Electrónico** (para formalización de requerimientos) y **Trello** (para gestión de _tickets_ y seguimiento de estado de los incidentes)61.-   **Explicación corporativa:** Establecemos líneas de comunicación directas, organizadas y sin burocracia61. Sus líderes podrán reportar cualquier eventualidad de forma rápida por WhatsApp o correo, y tendrán visibilidad total del avance de la solución a través de tableros compartidos en Trello61.
+
+**4.6 Qué NO cubre el soporte**
+
+-   **Detalle Técnico:** La cobertura excluye expresamente el desarrollo de nuevas funcionalidades, diseño de nuevas interfaces, carga masiva de inventario adicional, y la resolución de fallos causados por interrupciones de servicios de terceros o alteraciones al código fuente por parte de personal ajeno a iAnGo62.-   **Explicación corporativa:** Para mantener la estabilidad del ecosistema que les entregaremos, el soporte base no incluye trabajos de evolución ni la reparación de daños causados si alguien externo intenta modificar la programación62. Cualquier necesidad de crecimiento, integración nueva o soporte fuera del alcance aprobado, se cotizará y ejecutará mediante nuestra tarifa de **Hora de Especialista establecida en $100.000 COP por hora**62.
+
+\--------------------------------------------------------------------------------
+
+💼 PÁGINA 5: INVERSIÓN
+
+_La sección financiera presentada con total transparencia comercial_63_._
+
+**5\. PROPUESTA ECONÓMICA (OBLIGATORIO)** Para la presentación de esta propuesta económica, hemos estructurado la inversión basándonos en el altísimo valor tecnológico que entregaremos64. Esta no es una cotización por una página web tradicional, sino la inversión en un ecosistema B2B de última tecnología (Arquitectura Headless) diseñado para la captación, conversión y posicionamiento multilatina64.
+
+A continuación, presentamos el desglose detallado cumpliendo todos los requerimientos comerciales exigidos64:
+
+**5.1 Valor total del proyecto (Con detalle de fases)**
+
+-   **Detalle Comercial:** La ejecución del proyecto "Llave en Mano" se divide en 4 fases estratégicas de ingeniería65. De acuerdo al mercado, la complejidad de cada desarrollo y las horas invertidas en los requerimientos, los valores estimados por fase se presentan a continuación **SIN IVA**65:
+    -   **Fase 1:** Arquitectura _Headless_, despliegue de _WordPress Multisite_ y Entornos de Seguridad SSL: **$ 2.500.000 COP**65-   **Fase 2:** Desarrollo de _Frontend_ en _Next.js_, Búsqueda Inteligente (_Supabase_) y Scripts de Ruteo WhatsApp (Cotización Inteligente): **$ 5.000.000 COP**65-   **Fase 3:** Estructuración y carga de 300 Productos, Posicionamiento GEO/IA e Integraciones analíticas/CRM: **$ 3.700.000 COP**65-   **Fase 4:** Control de Calidad (Pruebas QA), Entrega de Documentación y Capacitación (Sincrónica y Asincrónica): **$ 3.300.000 COP**65-   **SUBTOTAL DEL PROYECTO:** **$ 14.500.000 COP**65-   **IVA (19%):** **$ 2.755.000 COP**65-   **VALOR TOTAL FINAL DEL PROYECTO:** **$ 17.255.000 COP**65-   **Explicación corporativa:** Dividimos el proyecto en fases lógicas de ingeniería65. Esto le permite a su comité de compras tener absoluta claridad de qué componente tecnológico se está pagando en cada etapa, garantizando que el presupuesto se invierte en entregables tangibles, medibles y de alto impacto para el negocio, con un precio altamente competitivo para una plataforma de nivel corporativo65.
+
+**5.2 Moneda e Impuestos (IVA incluido o no)**
+
+-   **Detalle Comercial:** Todos los valores presentados en esta propuesta están expresados en **Pesos Colombianos (COP)**66. Los precios de cada fase **NO incluyen IVA**66. El impuesto correspondiente (IVA del 19%) se suma al subtotal de las fases, dando como resultado el valor total final expresado en el punto anterior66.-   **Explicación corporativa:** Presentamos una oferta financieramente transparente, estandarizada en la moneda de la matriz corporativa (Colombia) para facilitar sus procesos de causación contable, compras y facturación, mostrando claramente la base gravable y los impuestos de ley aplicables66.
+
+**5.3 Forma de pago**
+
+-   **Detalle Comercial:** El flujo de caja del proyecto se estructura en tres pagos contra el cumplimiento de hitos67:
+    -   **50% de Anticipo:** A la firma del contrato y acta de inicio67.-   **30% contra Pruebas:** A la entrega del ecosistema desplegado en el ambiente de _Staging_ para validación67.-   **20% contra Entrega Final:** A la firma del acta de cierre a conformidad y salida a producción (En Vivo)67.-   **Explicación corporativa:** Establecemos un modelo de riesgo compartido67. Powest no desembolsa la totalidad del dinero por adelantado; los pagos están estratégicamente atados al avance real del ecosistema67. Ustedes solo pagan los saldos cuando ven su plataforma construida y cuando se lanza exitosamente al mercado67.
+
+**5.4 Condiciones comerciales y Vigencia de la oferta**
+
+-   **Detalle Comercial:** La presente propuesta económica y las condiciones técnicas detalladas en este documento tienen una **vigencia estricta de 30 días calendario** a partir de la fecha de su presentación68.-   **Explicación corporativa:** Otorgamos a su comité de compras y TI un mes completo para analizar detenidamente la ingeniería y los números propuestos68. Este tiempo bloquea nuestra disponibilidad operativa para garantizar que, si Powest aprueba el proyecto, arranquemos de inmediato respetando el exigente cronograma de 4 semanas68.
+
+**5.5 Hora especialista por si se requiere para cambios**
+
+-   **Detalle Comercial:** Para requerimientos tecnológicos por fuera del alcance original y la garantía (nuevas funcionalidades evolutivas, diseño de interfaces adicionales, integraciones con nuevos softwares de terceros o mantenimientos futuros), se establece una tarifa preferencial fija de **$ 100.000 COP por Hora de Especialista**69.-   **Explicación corporativa:** Le damos a Powest predictibilidad financiera a futuro69. Al dejar pactada desde el día cero nuestra tarifa corporativa de desarrollo continuo, ustedes tienen la seguridad de cuánto costará escalar la plataforma el próximo año o integrar nuevas líneas de negocio, sin temor a sobrecostos arbitrarios o tarifas infladas a futuro69.
+
+\--------------------------------------------------------------------------------
+
+📅 PÁGINA 6: PLAN DE ACCIÓN Y ENTREGABLES
+
+_El gran cierre para demostrar organización y agilidad_70_._
+
+**6\. ENTREGABLES DEL PROYECTO (OBLIGATORIO)**
+
+**6.1 Metodología de trabajo y 6.2 Cronograma detallado**
+
+-   **Detalle Técnico:** Implementación de metodología ágil (Scrum) y diagrama de Gantt operativo71. Tendremos ceremonias de seguimiento semanales para presentar avances en _Staging_71.-   **Explicación corporativa:** Powest tendrá visibilidad total del progreso en tiempo real mediante metas comprobables, evitando reprocesos71.
+
+**6.3 Duración total (6 semanas: 4 de desarrollo + 2 de capacitación)**
+
+-   **Detalle Técnico:** Ejecución estructurada en un _Timebox_ de 6 semanas calendario desde la firma del acta de inicio72. Las primeras 4 semanas estarán dedicadas íntegramente al desarrollo ágil, integración y despliegue del ecosistema en el entorno de producción72. Las 2 semanas finales se destinarán de forma exclusiva a la ejecución del plan de capacitación operativo (sesiones sincrónicas y asincrónicas) y la firma del acta de cierre72.-   **Explicación corporativa:** El pliego solicita un tiempo máximo de 4 semanas72. Nosotros cumplimos esta exigencia a nivel técnico: **su plataforma estará desarrollada, probada y completamente funcional en la semana 4**72. Sin embargo, para no colapsar la agenda de su equipo (mínimo 6 personas) con el volumen de capacitaciones exigido, hemos adicionado 2 semanas exclusivas para la formación72. De esta manera, entregamos la tecnología a tiempo y garantizamos que su personal asimile el conocimiento a un ritmo adecuado sin afectar su productividad diaria72.
+
+**6.4 Hitos y entregables**
+
+-   **Detalle Técnico:** El proyecto avanza mediante hitos de entrega semanales desplegados en el ambiente de _Staging_ para su validación técnica, culminando con la etapa de formación73:
+    -   **Hito 1 (Semana 1):** Despliegue de Arquitectura _Headless_, _WordPress Multisite_ y Entornos de Seguridad SSL73.-   **Hito 2 (Semana 2):** Desarrollo _Frontend_ (Next.js), Búsqueda _LiveSearch_ (Supabase) y Cotización Inteligente por WhatsApp73.-   **Hito 3 (Semana 3):** Carga de inventario (300 productos), Integraciones analíticas (GA4, CRM) y marcado SEO/IA73.-   **Hito 4 (Semana 4):** Control de Calidad funcional (QA), entrega de manuales técnicos/usuario y Despliegue del ecosistema73.-   **Hito 5 y 6 (Semanas 5 y 6):** Ejecución de las sesiones de capacitación (Sincrónicas y Asincrónicas), acompañamiento operativo al equipo Powest y firma de acta de cierre a conformidad73.-   **Explicación corporativa:** El proyecto avanza mediante metas comprobables73. Durante el primer mes, ustedes verán la plataforma construirse y materializarse semana a semana mediante entregables 100% tangibles73. Una vez la tecnología esté finalizada y aprobada en la semana 4, dedicaremos las últimas dos semanas a empoderar a su equipo comercial y técnico, asegurando una transición de conocimiento exitosa y sin presiones de cronograma73.
+
+**6.5 Reuniones semanales de seguimiento**
+
+-   **Detalle Técnico y Explicación corporativa:** Ejecución ágil con reuniones semanales de seguimiento alineadas a los Hitos del proyecto para garantizar el monitoreo del trabajo entregable de manera conjunta74.
+
+\--------------------------------------------------------------------------------
+
+Al estructurarlo en estas 6 páginas de navegación interactiva, el gerente podrá ir directo al **Reto**, el líder de tecnología verificará sin problemas el **Alcance Técnico** en las pestañas y el área de compras evaluará la **Inversión y Garantías** a su propio ritmo75. ¡Tienes un material insuperable en tus manos!

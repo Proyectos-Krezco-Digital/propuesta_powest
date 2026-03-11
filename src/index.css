@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@400;600;800&family=Lato:wght@300;400;700&family=Inter:ital,wght@1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #F3F3F5; /* Light Gray/Lavender tint */
+  --bg-secondary: #FFFFFF;
+  --bg-accent: #ECECF2;
+  
+  --text-primary: #000000;
+  --text-secondary: #4B5563; /* Gray-600 */
+  
+  --color-lime: #CCFF00; /* Neon Lime Green */
+  --color-purple: #A855F7; /* Purple-500 */
+  --color-dark: #111111; /* Almost Black */
+
+  /* Font Families */
+  --font-titles: 'Montserrat', sans-serif;
+  --font-ui: 'Poppins', sans-serif;
+  --font-body: 'Lato', sans-serif;
+  --font-logo: 'Inter', sans-serif;
+
+  font-family: var(--font-body);
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+  font-family: var(--font-titles);
+}
+
+h3, h4, button, .font-ui {
+  font-family: var(--font-ui);
+}
+
+p, span, div {
+  font-family: var(--font-body);
+}
+
+.font-logo {
+  font-family: var(--font-logo) !important;
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-3xl p-8 border border-transparent shadow-sm hover:shadow-md transition-all duration-300;
+  }
+  .btn-lime {
+    @apply bg-[var(--color-lime)] text-black font-bold rounded-full px-8 py-3 hover:opacity-90 transition-opacity;
+  }
+  .btn-outline {
+    @apply border border-gray-300 text-black font-medium rounded-full px-6 py-2 hover:bg-gray-100 transition-colors;
+  }
+}
+
+@layer utilities {
+  .animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 3s ease infinite;
+  }
+
+  .footer-pro {
+    position: relative;
+    background: radial-gradient(120% 80% at 50% 0%, #121212 0%, #0a0a0a 60%);
+    color: #e5e7eb;
+    border-top: 1px solid #1f1f1f;
+  }
+
+  .footer-ticker {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-lime);
+    border-bottom: 1px solid #d1d5db;
+    width: 100%;
+    margin: 0;
+  }
+  .footer-ticker-track {
+    display: inline-flex;
+    gap: 48px;
+    white-space: nowrap;
+    animation: ticker-left 28s linear infinite;
+  }
+  @keyframes ticker-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
