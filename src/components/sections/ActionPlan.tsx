@@ -208,20 +208,16 @@ export const ActionPlan = () => {
               <h3 className="text-2xl sm:text-3xl md:text-5xl font-black mb-10 md:mb-16 leading-tight italic tracking-tighter text-balance text-black font-titles uppercase break-words">
                 "Este ecosistema digital permitirá a POWEST convertir usuarios regionales en clientes leales mediante una ingeniería de clase mundial. iAnGo está lista para iniciar."
               </h3>
-                           <div className="flex flex-col items-center gap-12">
+              <div className="flex flex-col items-center gap-12 relative z-20">
                 <button 
                   onClick={() => {
-                    const subject = "Aprobación de Propuesta Técnica: Ecosistema Digital POWEST";
-                    const body = "Hola equipo de iAnGo,\n\nHe revisado detalladamente la propuesta técnica para el proyecto POWEST MULTILATINA y estamos listos para avanzar hacia la fase de implementación.\n\nNos gustaría coordinar los siguientes pasos para dar inicio oficial a la Fase 1: Arquitectura & Seguridad.\n\n¡Estamos emocionados de iniciar este viaje tecnológico con ustedes!\n\nSaludos,";
-                    const mailtoUrl = `mailto:dazzleagency.ac@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-                    
-                    // Método robusto: Intenta abrir en una ventana nueva y redirigir
-                    window.location.href = mailtoUrl;
+                    const mensaje = "Hola equipo de iAnGo,%0A%0AHe revisado detalladamente la propuesta técnica para el proyecto POWEST MULTILATINA y estamos listos para avanzar hacia la fase de implementación.%0A%0ANos gustaría coordinar los siguientes pasos para dar inicio oficial a la Fase 1: Arquitectura & Seguridad.%0A%0A¡Estamos emocionados de iniciar este viaje tecnológico con ustedes!";
+                    window.open(`https://wa.me/573218737931?text=${mensaje}`, '_blank');
                   }}
-                  className="bg-black text-base md:text-2xl px-10 md:px-16 py-6 md:py-8 rounded-full font-black uppercase tracking-tighter shadow-2xl hover:scale-105 active:scale-95 transition-all duration-700 flex items-center gap-4 md:gap-6 font-ui cursor-pointer"
+                  className="bg-black text-[var(--color-lime)] text-base md:text-xl lg:text-2xl px-10 md:px-16 py-6 md:py-8 rounded-full font-black uppercase tracking-tighter shadow-2xl hover:scale-105 hover:bg-[var(--color-purple)] hover:text-white active:scale-95 transition-all duration-700 flex items-center justify-center text-center gap-4 md:gap-6 font-ui cursor-pointer w-full sm:w-auto"
                 >
-                  <span>ACEPTO LA PROPUESTA</span>
-                  <Rocket className="w-6 h-6 md:w-8 md:h-8" />
+                  <span className="leading-tight">ACEPTO LA PROPUESTA</span>
+                  <Rocket className="w-6 h-6 md:w-8 md:h-8 shrink-0" />
                 </button>
                 
                 <div className="text-center space-y-6">
@@ -230,9 +226,9 @@ export const ActionPlan = () => {
                       <div className="h-0.5 w-20 bg-black/20 mx-auto" />
                    </div>
                    
-                   <p className="text-black/40 text-sm font-bold font-ui">
-                     ¿El botón no abre tu correo? Escríbenos directamente a: <br />
-                     <span className="text-black font-black border-b-2 border-black/10">dazzleagency.ac@gmail.com</span>
+                   <p className="text-black/50 text-sm font-bold font-ui">
+                     ¿El botón no te redirige a WhatsApp? Escríbenos a nuestro corporativo: <br />
+                     <a href="https://wa.me/573218737931" target="_blank" className="text-black text-base font-black border-b-2 border-black/20 hover:border-black transition-colors mt-2 inline-block">+57 321 873 7931</a>
                    </p>
                 </div>
               </div>
