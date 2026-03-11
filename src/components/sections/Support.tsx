@@ -83,21 +83,21 @@ export const Support = () => {
             <Headphones className="w-3.5 h-3.5 text-[var(--color-lime)]" />
             <span>PÁGINA 4: SOPORTE Y GARANTÍAS</span>
           </div>
-          <h1 className="text-3xl md:text-5xl lg:text-[4.2rem] font-black tracking-tighter text-black leading-[1.05] font-titles uppercase">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-[4.2rem] font-black tracking-tighter text-black leading-tight lg:leading-[1.05] font-titles uppercase break-words">
             4. SOPORTE Y GARANTÍAS <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-700 italic">POST IMPLEMENTACIÓN:</span> <br />
             <span className="text-[var(--color-purple)] italic tracking-tighter">POWEST MULTILATINA</span>
           </h1>
           <div className="h-1.5 w-24 bg-[var(--color-lime)] rounded-full mb-8" />
-          <div className="border-l-4 border-gray-100 pl-8 py-2">
-            <p className="text-lg text-gray-500 leading-relaxed font-medium italic text-balance font-body">
+          <div className="border-l-4 border-[var(--color-lime)]/50 pl-4 lg:pl-8 py-2 w-full">
+            <p className="text-base sm:text-lg text-gray-500 leading-relaxed font-medium italic text-balance font-body">
               Garantizamos el respaldo absoluto sobre la arquitectura y el código entregado. Nuestro esquema de soporte protege la continuidad del negocio y asegura la estabilidad del ecosistema multidominio.
             </p>
           </div>
         </motion.div>
 
         {/* Support Sections Grid */}
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-10 lg:gap-12 w-full min-w-0">
           {supportSections.map((section, idx) => (
             <motion.div
               key={section.id}

@@ -21,7 +21,7 @@ function ScrollToTop() {
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-[var(--bg-primary)] relative">
+      <div className="min-h-screen bg-[var(--bg-primary)] relative overflow-x-clip w-full">
         <ScrollToTop />
         <ScrollUpButton />
         <Navbar />

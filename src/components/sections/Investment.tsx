@@ -35,14 +35,14 @@ export const Investment = () => {
             <DollarSign className="w-3.5 h-3.5 text-[var(--color-lime)]" />
             <span>PÁGINA 5: INVERSIÓN</span>
           </div>
-          <h1 className="text-3xl md:text-5xl lg:text-[4.2rem] font-black tracking-tighter text-black leading-[1.05] font-titles uppercase">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-[4.2rem] font-black tracking-tighter text-black leading-tight lg:leading-[1.05] font-titles uppercase break-words">
             5. PROPUESTA ECONÓMICA Y <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-700 italic">VALOR TECNOLÓGICO:</span> <br />
             <span className="text-[var(--color-purple)] italic tracking-tighter">POWEST MULTILATINA</span>
           </h1>
           <div className="h-1.5 w-24 bg-[var(--color-lime)] rounded-full mb-8" />
-          <div className="border-l-4 border-gray-100 pl-8 py-2">
-            <p className="text-lg text-gray-500 leading-relaxed font-medium italic text-balance font-body">
+          <div className="border-l-4 border-[var(--color-lime)]/50 pl-4 lg:pl-8 py-2 w-full">
+            <p className="text-base sm:text-lg text-gray-500 leading-relaxed font-medium italic text-balance font-body">
               Hemos estructurado la inversión basándonos en el altísimo valor tecnológico que entregaremos. Esta no es una cotización por una página web tradicional, sino la inversión en un <strong>ecosistema B2B de última tecnología</strong>.
             </p>
           </div>
@@ -55,7 +55,7 @@ export const Investment = () => {
             <h2 className="text-2xl md:text-3xl font-black text-black tracking-tighter uppercase font-titles">5.1 VALOR TOTAL DEL PROYECTO (DETALLE DE FASES)</h2>
           </div>
 
-          <div className="grid lg:grid-cols-[1fr_0.8fr] gap-12">
+          <div className="flex flex-col lg:grid lg:grid-cols-[1fr_0.8fr] gap-10 lg:gap-12 w-full min-w-0">
              <div className="space-y-4">
                {phases.map((phase, idx) => (
                  <motion.div 
@@ -116,7 +116,7 @@ export const Investment = () => {
           </div>
         </section>
 
-        <div className="grid lg:grid-cols-2 gap-12 mb-24">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-12 mb-16 lg:mb-24 w-full min-w-0">
           {/* 5.2 MONEDA E IMPUESTOS */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -139,7 +139,7 @@ export const Investment = () => {
               </div>
               <div className="space-y-4">
                 <span className="text-[10px] font-black text-black uppercase tracking-[0.4em] block font-ui">Explicación Corporativa</span>
-                <p className="text-base text-gray-500 font-medium leading-relaxed border-l-4 border-gray-100 pl-6 font-body">
+                <p className="text-sm md:text-base text-gray-500 font-medium leading-relaxed border-l-4 border-[var(--color-purple)]/20 pl-4 md:pl-6 font-body">
                   Oferta financieramente transparente, estandarizada en la moneda de la matriz corporativa (Colombia) para facilitar procesos contables y de facturación.
                 </p>
               </div>
@@ -181,7 +181,7 @@ export const Investment = () => {
           </motion.div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-12 w-full min-w-0">
           {/* 5.4 VIGENCIA */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -200,7 +200,7 @@ export const Investment = () => {
                 <Clock className="w-6 h-6 text-[var(--color-lime)]" />
                 <p className="text-lg font-black text-black font-ui uppercase">30 DÍAS CALENDARIO</p>
               </div>
-              <p className="text-base text-gray-500 font-medium leading-relaxed border-l-4 border-gray-100 pl-6 italic font-body">
+              <p className="text-sm md:text-base text-gray-500 font-medium leading-relaxed border-l-4 border-gray-200 pl-4 md:pl-6 italic font-body">
                 Este tiempo bloquea nuestra disponibilidad operativa para garantizar el arranque inmediato respetando el cronograma de 4 semanas.
               </p>
             </div>
@@ -224,7 +224,7 @@ export const Investment = () => {
                <div>
                   <h4 className="text-4xl font-black text-black tracking-tighter italic font-titles">$ 100.000 <span className="text-sm uppercase tracking-widest">COP / HORA</span></h4>
                </div>
-               <p className="text-base text-black/70 font-bold leading-relaxed border-l-4 border-black/20 pl-6 italic font-body">
+               <p className="text-sm md:text-base text-black/70 font-bold leading-relaxed border-l-4 border-black/20 pl-4 md:pl-6 italic font-body text-balance">
                  Damos predictibilidad financiera. Al pactar la tarifa de desarrollo continuo, tienen la seguridad de cuánto costará escalar la plataforma sin sobrecostos arbitrarios.
                </p>
             </div>

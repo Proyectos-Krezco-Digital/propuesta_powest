@@ -63,21 +63,21 @@ export const ActionPlan = () => {
             <Rocket className="w-3.5 h-3.5 text-[var(--color-lime)]" />
             <span>PÁGINA 6: PLAN DE ACCIÓN</span>
           </div>
-          <h1 className="text-3xl md:text-5xl lg:text-[4.2rem] font-black tracking-tighter text-black leading-[1.05] font-titles uppercase">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-[4.2rem] font-black tracking-tighter text-black leading-tight lg:leading-[1.05] font-titles uppercase break-words">
             6. ENTREGABLES Y <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-700 italic">PLAN DE EJECUCIÓN:</span> <br className="hidden md:block" />
             <span className="text-[var(--color-purple)] italic tracking-tighter">POWEST MULTILATINA</span>
           </h1>
           <div className="h-1.5 w-24 bg-[var(--color-lime)] rounded-full mb-8" />
-          <div className="border-l-4 border-gray-100 pl-8 py-2">
-            <p className="text-lg text-gray-500 leading-relaxed font-medium italic text-balance font-body">
+          <div className="border-l-4 border-[var(--color-lime)]/50 pl-4 lg:pl-8 py-2 w-full">
+            <p className="text-base sm:text-lg text-gray-500 leading-relaxed font-medium italic text-balance font-body">
               El cierre estratégico para demostrar organización y agilidad. Entregamos tecnología de vanguardia en tiempos récord bajo metodología Scrum.
             </p>
           </div>
         </motion.div>
 
         {/* 6.1 & 6.2 Metodología y Cronograma */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-24">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-12 mb-16 lg:mb-24 w-full min-w-0">
            <motion.div 
              initial={{ opacity: 0, x: -20 }}
              whileInView={{ opacity: 1, x: 0 }}
@@ -143,7 +143,7 @@ export const ActionPlan = () => {
               <h2 className="text-2xl md:text-3xl font-black text-black tracking-tighter uppercase font-titles">6.4 HITOS SEMANALES Y ENTREGABLES</h2>
            </div>
 
-           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
+           <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-4 w-full min-w-0">
               {timelineWeeks.map((item, idx) => (
                 <motion.div
                   key={idx}
@@ -163,8 +163,8 @@ export const ActionPlan = () => {
               ))}
            </div>
 
-           <div className="mt-12 p-10 rounded-[4rem] bg-gray-50 border-l-8 border-black">
-              <p className="text-lg text-gray-600 font-bold italic leading-relaxed font-body">
+           <div className="mt-12 p-8 md:p-10 rounded-[3rem] md:rounded-[4rem] bg-gray-50 border-l-4 md:border-l-8 border-black w-full min-w-0">
+              <p className="text-base md:text-lg text-gray-600 font-bold italic leading-relaxed font-body text-balance">
                 "Ustedes verán la plataforma construirse semana a semana mediante entregables 100% tangibles, empoderando a su equipo para una transición exitosa."
               </p>
            </div>
@@ -178,8 +178,8 @@ export const ActionPlan = () => {
              viewport={{ once: true }}
              className="p-12 rounded-[4rem] bg-black text-white relative overflow-hidden group border border-white/5"
            >
-              <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-[var(--color-lime)] rounded-full blur-[100px] opacity-[0.05]" />
-              <div className="flex flex-col md:flex-row gap-12 items-center relative z-10">
+              <div className="absolute -bottom-24 -right-24 w-40 sm:w-64 h-40 sm:h-64 bg-[var(--color-lime)] rounded-full blur-[80px] sm:blur-[100px] opacity-[0.05]" />
+              <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center relative z-10 text-center md:text-left">
                  <div className="w-20 h-20 bg-white/10 rounded-3xl flex items-center justify-center shrink-0 border border-white/10 group-hover:bg-[var(--color-lime)] group-hover:text-black transition-all">
                     <Presentation className="w-10 h-10" />
                  </div>
@@ -201,14 +201,14 @@ export const ActionPlan = () => {
           className="bg-[var(--color-lime)] p-12 md:p-24 rounded-[5rem] text-center shadow-2xl relative overflow-hidden group"
         >
            <div className="absolute top-0 left-0 w-full h-full bg-black/5" />
-           <div className="relative z-10 max-w-5xl mx-auto space-y-16">
+            <div className="relative z-10 max-w-5xl mx-auto space-y-12 md:space-y-16">
               <div className="flex justify-center">
-                 <div className="w-24 h-24 bg-black rounded-3xl flex items-center justify-center group-hover:scale-110 transition-transform duration-700 shadow-xl">
-                    <Star className="w-12 h-12 text-[var(--color-lime)] fill-[var(--color-lime)] animate-pulse" />
+                 <div className="w-20 h-20 md:w-24 md:h-24 bg-black rounded-3xl flex items-center justify-center group-hover:scale-110 transition-transform duration-700 shadow-xl">
+                    <Star className="w-10 h-10 md:w-12 md:h-12 text-[var(--color-lime)] fill-[var(--color-lime)] animate-pulse" />
                  </div>
               </div>
               
-              <h3 className="text-3xl md:text-5xl font-black mb-16 leading-tight italic tracking-tighter text-balance text-black font-titles uppercase">
+              <h3 className="text-2xl sm:text-3xl md:text-5xl font-black mb-10 md:mb-16 leading-tight italic tracking-tighter text-balance text-black font-titles uppercase break-words">
                 "Este ecosistema digital permitirá a POWEST convertir usuarios regionales en clientes leales mediante una ingeniería de clase mundial. iAnGo está lista para iniciar."
               </h3>
                            <div className="flex flex-col items-center gap-12">

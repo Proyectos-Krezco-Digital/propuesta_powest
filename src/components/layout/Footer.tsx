@@ -13,7 +13,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-24 items-start pb-24 border-b border-white/10">
           
           {/* 1. BRAND IDENTITY */}
-          <div className="space-y-10 col-span-2">
+          <div className="space-y-10 lg:col-span-2">
             <Link to="/" className="inline-block group relative">
               <span className="text-4xl md:text-[3.2rem] font-extrabold italic tracking-tighter text-white font-logo relative z-10 leading-none">
                 iAnGo
@@ -31,7 +31,7 @@ export const Footer = () => {
               <h3 className="text-[var(--color-lime)] font-black text-xs uppercase tracking-[0.4em] font-ui">
                 Agencia de Desarrollo y Automatizaciones IA
               </h3>
-              <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-lg font-body font-medium italic border-l-2 border-white/5 pl-8">
+              <p className="text-gray-400 text-base md:text-lg lg:text-xl leading-relaxed max-w-lg font-body font-medium italic border-l-2 border-[var(--color-lime)]/30 pl-6 md:pl-8 text-balance">
                 Transformando la complejidad técnica en ecosistemas digitales de alto rendimiento. Expertos en arquitecturas Headless y despliegue inteligente con IA.
               </p>
             </div>
