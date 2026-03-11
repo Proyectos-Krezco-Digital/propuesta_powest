@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Server, 
@@ -10,7 +10,9 @@ import {
   Users2,
   Cpu,
   ArrowRight,
-  Database
+  Database,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -93,6 +95,35 @@ const tabs = [
 export const Scope = () => {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   const currentTab = tabs.find(t => t.id === activeTab) || tabs[0];
+  
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const checkScroll = () => {
+    if (scrollContainerRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
+      setCanScrollLeft(scrollLeft > 0);
+      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 1);
+    }
+  };
+
+  useEffect(() => {
+    checkScroll();
+    window.addEventListener('resize', checkScroll);
+    return () => window.removeEventListener('resize', checkScroll);
+  }, []);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollContainerRef.current) {
+      const scrollAmount = window.innerWidth * 0.5; // Scroll 50% of the screen width
+      scrollContainerRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+      setTimeout(checkScroll, 350); // check again after animation
+    }
+  };
 
   return (
     <div className="pt-40 pb-32 bg-white min-h-screen">
@@ -123,48 +154,73 @@ export const Scope = () => {
 
         <div className="grid lg:grid-cols-[340px_1fr] gap-16 items-start">
           
-          {/* Sidebar - Menú Horizontal en Móviles */}
-          <div 
-            className="flex flex-row lg:flex-col gap-3 sticky top-[3.5rem] md:top-20 lg:top-32 z-30 overflow-x-auto lg:overflow-visible pb-4 pt-4 lg:py-0 bg-white lg:bg-transparent -mx-4 px-4 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0 border-b border-gray-100 lg:border-none"
-            style={{ 
-              scrollbarWidth: 'none', 
-              msOverflowStyle: 'none',
-              WebkitOverflowScrolling: 'touch' 
-            }}
-          >
-            <style>{`.hide-scrollbar::-webkit-scrollbar { display: none; }`}</style>
+          {/* Sidebar - Contenedor Principal (Sticky) */}
+          <div className="sticky top-[3.5rem] md:top-20 lg:top-32 z-30 bg-white lg:bg-transparent -mx-4 sm:-mx-6 lg:mx-0 border-b border-gray-100 lg:border-none relative">
             
-            <div className="hidden lg:flex items-center gap-3 mb-6 ml-6">
-               <Database className="w-5 h-5 text-black" />
-               <p className="text-[12px] font-black text-black uppercase tracking-[0.4em] font-ui">Módulos</p>
+            {/* Sombras Laterales (Móvil) para indicar más contenido */}
+            <div className={`absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none transition-opacity duration-300 lg:hidden ${canScrollLeft ? 'opacity-100' : 'opacity-0'}`} />
+            <div className={`absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none transition-opacity duration-300 lg:hidden ${canScrollRight ? 'opacity-100' : 'opacity-0'}`} />
+            
+            {/* Botones Flotantes (Móviles) */}
+            <button 
+              onClick={() => scroll('left')}
+              className={`absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white border border-gray-100 shadow-md rounded-full p-1.5 transition-all lg:hidden ${canScrollLeft ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full pointer-events-none'}`}
+            >
+              <ChevronLeft className="w-4 h-4 text-gray-700" />
+            </button>
+            
+            <button 
+              onClick={() => scroll('right')}
+              className={`absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white border border-gray-100 shadow-md rounded-full p-1.5 transition-all lg:hidden ${canScrollRight ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full pointer-events-none'}`}
+            >
+              <ChevronRight className="w-4 h-4 text-gray-700" />
+            </button>
+
+            {/* Menú Horizontal / Vertical desplazable */}
+            <div 
+              ref={scrollContainerRef}
+              onScroll={checkScroll}
+              className="flex flex-row lg:flex-col gap-3 overflow-x-auto lg:overflow-visible pb-4 pt-4 lg:py-0 px-4 sm:px-6 lg:px-0"
+              style={{ 
+                scrollbarWidth: 'none', 
+                msOverflowStyle: 'none',
+                WebkitOverflowScrolling: 'touch' 
+              }}
+            >
+              <style>{`.hide-scrollbar::-webkit-scrollbar { display: none; }`}</style>
+              
+              <div className="hidden lg:flex items-center gap-3 mb-6 ml-6 shrink-0">
+                 <Database className="w-5 h-5 text-black" />
+                 <p className="text-[12px] font-black text-black uppercase tracking-[0.4em] font-ui">Módulos</p>
+              </div>
+              {tabs.map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => {
+                    setActiveTab(tab.id);
+                    const contentEl = document.getElementById('scope-content');
+                    if (window.innerWidth < 1024 && contentEl) {
+                      contentEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
+                  className={`flex items-center lg:justify-between gap-3 lg:gap-4 px-5 lg:px-8 py-3 lg:py-5 rounded-[4rem] transition-all duration-500 text-left relative group border shrink-0 ${
+                    activeTab === tab.id 
+                      ? 'bg-black text-white border-black shadow-xl lg:shadow-2xl scale-100 lg:scale-[1.02]' 
+                      : 'bg-transparent text-gray-700 border-gray-200 lg:border-transparent hover:bg-gray-50 hover:text-black'
+                  }`}
+                >
+                  <div className="flex items-center gap-3 lg:gap-4">
+                    <tab.icon className={`w-4 h-4 lg:w-5 lg:h-5 shrink-0 transition-colors duration-300 ${activeTab === tab.id ? 'text-[var(--color-lime)]' : 'text-gray-400 group-hover:text-black'}`} />
+                    <span className={`font-black uppercase tracking-widest transition-all duration-300 font-ui whitespace-nowrap ${activeTab === tab.id ? 'text-[11px] lg:text-[13px] text-white' : 'text-[10px] lg:text-[11px] text-gray-600'}`}>
+                      {tab.label}
+                    </span>
+                  </div>
+                  {activeTab === tab.id && (
+                    <motion.div layoutId="scopeActiveDot" className="hidden lg:block w-2.5 h-2.5 bg-[var(--color-lime)] rounded-full shadow-[0_0_15px_rgba(232,255,0,0.8)]" />
+                  )}
+                </button>
+              ))}
             </div>
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => {
-                  setActiveTab(tab.id);
-                  const contentEl = document.getElementById('scope-content');
-                  if (window.innerWidth < 1024 && contentEl) {
-                    contentEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                  }
-                }}
-                className={`flex items-center lg:justify-between gap-3 lg:gap-4 px-5 lg:px-8 py-3 lg:py-5 rounded-[4rem] transition-all duration-500 text-left relative group border shrink-0 ${
-                  activeTab === tab.id 
-                    ? 'bg-black text-white border-black shadow-xl lg:shadow-2xl scale-100 lg:scale-[1.02]' 
-                    : 'bg-transparent text-gray-700 border-gray-200 lg:border-transparent hover:bg-gray-50 hover:text-black'
-                }`}
-              >
-                <div className="flex items-center gap-3 lg:gap-4">
-                  <tab.icon className={`w-4 h-4 lg:w-5 lg:h-5 shrink-0 transition-colors duration-300 ${activeTab === tab.id ? 'text-[var(--color-lime)]' : 'text-gray-400 group-hover:text-black'}`} />
-                  <span className={`font-black uppercase tracking-widest transition-all duration-300 font-ui whitespace-nowrap ${activeTab === tab.id ? 'text-[11px] lg:text-[13px] text-white' : 'text-[10px] lg:text-[11px] text-gray-600'}`}>
-                    {tab.label}
-                  </span>
-                </div>
-                {activeTab === tab.id && (
-                  <motion.div layoutId="scopeActiveDot" className="hidden lg:block w-2.5 h-2.5 bg-[var(--color-lime)] rounded-full shadow-[0_0_15px_rgba(232,255,0,0.8)]" />
-                )}
-              </button>
-            ))}
           </div>
 
           {/* Content Area */}
