@@ -126,8 +126,8 @@ export const Scope = () => {
   };
 
   return (
-    <div className="pt-40 pb-32 bg-white min-h-screen">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
+    <div className="pt-28 md:pt-40 pb-32 bg-white min-h-screen overflow-x-clip w-full text-balance">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 w-full">
         
         {/* Header Section */}
         <motion.div 
@@ -139,23 +139,23 @@ export const Scope = () => {
             <Cpu className="w-4 h-4 text-[var(--color-lime)]" />
             <span>PÁGINA 3: ALCANCE TÉCNICO</span>
           </div>
-          <h1 className="text-3xl md:text-5xl lg:text-[4.2rem] font-black tracking-tighter text-black leading-[1.05] font-titles uppercase">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-[4.2rem] font-black tracking-tighter text-black leading-tight lg:leading-[1.05] font-titles uppercase break-words">
             3. ALCANCE TÉCNICO Y <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-700 italic">FUNCIONAL WEB:</span> <br className="hidden md:block" />
             <span className="text-[var(--color-purple)] italic tracking-tighter">POWEST MULTILATINA</span>
           </h1>
           <div className="h-1.5 w-24 bg-[var(--color-lime)] rounded-full mb-8" />
-          <div className="border-l-4 border-gray-100 pl-8 py-2">
-            <p className="text-lg text-gray-500 leading-relaxed font-medium italic text-balance font-body">
+          <div className="border-l-4 border-[var(--color-lime)]/50 pl-4 lg:pl-8 py-2 w-full">
+            <p className="text-base sm:text-lg text-gray-500 leading-relaxed font-medium italic text-balance font-body">
               Despliegue integral de un ecosistema digital institucional multilatina (Colombia, México y Ecuador) bajo arquitectura Headless CMS de alto rendimiento.
             </p>
           </div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-[340px_1fr] gap-16 items-start">
+        <div className="flex flex-col lg:grid lg:grid-cols-[340px_1fr] gap-10 lg:gap-16 items-start w-full min-w-0">
           
           {/* Sidebar - Contenedor Principal (Sticky) */}
-          <div className="sticky top-[3.5rem] md:top-20 lg:top-32 z-30 bg-white lg:bg-transparent -mx-4 sm:-mx-6 lg:mx-0 border-b border-gray-100 lg:border-none relative">
+          <div className="sticky top-[3.5rem] md:top-20 lg:top-32 z-30 bg-white/95 backdrop-blur-md lg:bg-transparent border-b border-gray-100 lg:border-none relative w-full pt-2 lg:pt-0">
             
             {/* Sombras Laterales (Móvil) para indicar más contenido */}
             <div className={`absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none transition-opacity duration-300 lg:hidden ${canScrollLeft ? 'opacity-100' : 'opacity-0'}`} />
@@ -180,7 +180,7 @@ export const Scope = () => {
             <div 
               ref={scrollContainerRef}
               onScroll={checkScroll}
-              className="flex flex-row lg:flex-col gap-3 overflow-x-auto lg:overflow-visible pb-4 pt-4 lg:py-0 px-4 sm:px-6 lg:px-0"
+              className="flex flex-row lg:flex-col gap-3 overflow-x-auto lg:overflow-visible py-4 lg:py-0 w-full"
               style={{ 
                 scrollbarWidth: 'none', 
                 msOverflowStyle: 'none',
@@ -253,9 +253,9 @@ export const Scope = () => {
                       transition={{ delay: idx * 0.1, duration: 0.8 }}
                       className="group"
                     >
-                      <div className="grid lg:grid-cols-[80px_1fr] gap-6 lg:gap-8">
+                      <div className="grid lg:grid-cols-[80px_1fr] gap-4 lg:gap-8 w-full">
                         {/* Number Display */}
-                        <div className="flex flex-row lg:flex-col items-center gap-4 lg:gap-0">
+                        <div className="flex flex-row lg:flex-col items-center gap-4 lg:gap-0 shrink-0">
                           <span className="text-4xl lg:text-5xl font-black text-gray-200 lg:text-gray-100 group-hover:text-[var(--color-lime)] transition-colors duration-700 select-none font-titles">
                              {item.id.split('.').pop()}
                           </span>
