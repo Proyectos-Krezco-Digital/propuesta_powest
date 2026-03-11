@@ -47,7 +47,7 @@ export const Navbar = () => {
         <div className="flex justify-between items-center h-14 md:h-16">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0 flex items-center group relative">
-            <span className="text-3xl md:text-[2.6rem] font-extrabold italic tracking-tighter text-black font-logo relative z-10">
+            <span className="text-2xl md:text-[2.6rem] font-extrabold italic tracking-tighter text-black font-logo relative z-10">
               iAnGo
               <motion.div 
                 initial={{ width: 0 }}

@@ -109,8 +109,8 @@ export const Scope = () => {
             <span>PÁGINA 3: ALCANCE TÉCNICO</span>
           </div>
           <h1 className="text-3xl md:text-5xl lg:text-[4.2rem] font-black tracking-tighter text-black leading-[1.05] font-titles uppercase">
-            3. ALCANCE TÉCNICO Y <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-700 italic">FUNCIONAL WEB:</span> <br />
+            3. ALCANCE TÉCNICO Y <br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-700 italic">FUNCIONAL WEB:</span> <br className="hidden md:block" />
             <span className="text-[var(--color-purple)] italic tracking-tighter">POWEST MULTILATINA</span>
           </h1>
           <div className="h-1.5 w-24 bg-[var(--color-lime)] rounded-full mb-8" />
@@ -132,8 +132,14 @@ export const Scope = () => {
             {tabs.map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center justify-between gap-4 px-8 py-5 rounded-[4rem] transition-all duration-500 text-left relative group border ${
+                onClick={() => {
+                  setActiveTab(tab.id);
+                  const contentEl = document.getElementById('scope-content');
+                  if (window.innerWidth < 1024 && contentEl) {
+                    contentEl.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className={`flex items-center justify-between gap-4 px-6 md:px-8 py-4 md:py-5 rounded-[4rem] transition-all duration-500 text-left relative group border ${
                   activeTab === tab.id 
                     ? 'bg-black text-white border-black shadow-2xl scale-[1.02]' 
                     : 'bg-transparent text-gray-700 border-transparent hover:bg-gray-50 hover:text-black'
@@ -153,7 +159,7 @@ export const Scope = () => {
           </div>
 
           {/* Content Area */}
-          <div className="relative pt-4">
+          <div id="scope-content" className="relative pt-4 scroll-mt-24">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
@@ -182,13 +188,13 @@ export const Scope = () => {
                       transition={{ delay: idx * 0.1, duration: 0.8 }}
                       className="group"
                     >
-                      <div className="grid md:grid-cols-[100px_1fr] gap-8">
+                      <div className="grid md:grid-cols-[80px_1fr] gap-6 md:gap-8">
                         {/* Number Display */}
-                        <div className="flex flex-col items-center">
-                          <span className="text-5xl font-black text-gray-100 group-hover:text-[var(--color-lime)] transition-colors duration-700 select-none font-titles">
+                        <div className="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+                          <span className="text-4xl md:text-5xl font-black text-gray-100 group-hover:text-[var(--color-lime)] transition-colors duration-700 select-none font-titles">
                              {item.id.split('.').pop()}
                           </span>
-                          <div className="w-1.5 h-full bg-gray-50 group-hover:bg-[var(--color-lime)]/20 transition-all duration-700 min-h-[60px] rounded-full mt-4" />
+                          <div className="h-1 md:h-full w-full md:w-1.5 bg-gray-50 group-hover:bg-[var(--color-lime)]/20 transition-all duration-700 min-h-[4px] md:min-h-[60px] rounded-full mt-0 md:mt-4" />
                         </div>
 
                         <div className="space-y-10">
@@ -200,8 +206,8 @@ export const Scope = () => {
                             {/* Technical Specification */}
                             <div className="space-y-4">
                               <span className="text-[10px] font-black text-[var(--color-purple)] uppercase tracking-[0.4em] mb-2 block font-ui">Detalle Técnico</span>
-                              <div className="p-8 rounded-[3rem] bg-gray-50 border border-transparent hover:border-gray-200 transition-all duration-500">
-                                <p className="text-base text-gray-600 font-bold leading-relaxed italic font-body">
+                              <div className="p-6 md:p-8 rounded-[2rem] md:rounded-[3rem] bg-gray-50 border border-transparent hover:border-gray-200 transition-all duration-500">
+                                <p className="text-sm md:text-base text-gray-600 font-bold leading-relaxed italic font-body">
                                   {item.tech}
                                 </p>
                               </div>
@@ -210,8 +216,8 @@ export const Scope = () => {
                             {/* Business Value */}
                             <div className="space-y-4">
                               <span className="text-[10px] font-black text-black uppercase tracking-[0.4em] mb-2 block font-ui">Explicación Corporativa</span>
-                              <div className="p-8 border-l-4 border-gray-100">
-                                <p className="text-base text-gray-500 font-medium leading-relaxed font-body">
+                              <div className="p-6 md:p-8 border-l-4 border-gray-100">
+                                <p className="text-sm md:text-base text-gray-500 font-medium leading-relaxed font-body">
                                   {item.corp}
                                 </p>
                               </div>

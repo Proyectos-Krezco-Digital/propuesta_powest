@@ -83,9 +83,9 @@ export const Footer = () => {
                   href="mailto:dazzleagency.ac@gmail.com" 
                   className="flex items-center gap-4 text-gray-400 hover:text-[var(--color-purple)] transition-colors group px-4 py-3 bg-white/5 rounded-2xl border border-white/5 hover:border-[var(--color-purple)]/20 shadow-sm"
                 >
-                  <Mail className="w-4 h-4" />
-                  <span className="font-bold text-[13px] font-ui truncate">dazzleagency.ac@gmail.com</span>
-                  <ArrowUpRight className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <Mail className="w-4 h-4 shrink-0" />
+                  <span className="font-bold text-[11px] sm:text-[13px] font-ui truncate max-w-[170px] sm:max-w-none">dazzleagency.ac@gmail.com</span>
+                  <ArrowUpRight className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
                 </a>
               </div>
 

@@ -64,8 +64,8 @@ export const ActionPlan = () => {
             <span>PÁGINA 6: PLAN DE ACCIÓN</span>
           </div>
           <h1 className="text-3xl md:text-5xl lg:text-[4.2rem] font-black tracking-tighter text-black leading-[1.05] font-titles uppercase">
-            6. ENTREGABLES, CRONOGRAMA Y <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-700 italic">PLAN DE EJECUCIÓN:</span> <br />
+            6. ENTREGABLES Y <br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-700 italic">PLAN DE EJECUCIÓN:</span> <br className="hidden md:block" />
             <span className="text-[var(--color-purple)] italic tracking-tighter">POWEST MULTILATINA</span>
           </h1>
           <div className="h-1.5 w-24 bg-[var(--color-lime)] rounded-full mb-8" />
@@ -121,9 +121,9 @@ export const ActionPlan = () => {
                    </div>
                    <h3 className="text-xl font-black text-white leading-tight uppercase font-ui">6.3 DURACIÓN TOTAL DEL PROYECTO</h3>
                 </div>
-                <div className="mb-10">
-                   <h4 className="text-5xl font-black text-[var(--color-lime)] tracking-tighter italic font-titles">6 SEMANAS <span className="text-sm uppercase tracking-widest text-white/30">(4+2)</span></h4>
-                </div>
+                 <div className="mb-10">
+                    <h4 className="text-4xl md:text-5xl font-black text-[var(--color-lime)] tracking-tighter italic font-titles">6 SEMANAS <span className="text-[10px] md:text-sm uppercase tracking-widest text-white/30">(4+2)</span></h4>
+                 </div>
                 <div className="space-y-6">
                    <p className="text-base text-gray-400 font-medium leading-relaxed border-l-4 border-[var(--color-lime)]/30 pl-6 italic font-body">
                      <strong>4 Semanas de Desarrollo:</strong> Plataforma 100% funcional y probada según exigencia del pliego.
@@ -221,10 +221,10 @@ export const ActionPlan = () => {
                     // Método robusto: Intenta abrir en una ventana nueva y redirigir
                     window.location.href = mailtoUrl;
                   }}
-                  className="bg-black text-[var(--color-lime)] text-xl md:text-2xl px-16 py-8 rounded-full font-black uppercase tracking-tighter shadow-2xl hover:scale-105 active:scale-95 transition-all duration-700 flex items-center gap-6 font-ui cursor-pointer"
+                  className="bg-black text-base md:text-2xl px-10 md:px-16 py-6 md:py-8 rounded-full font-black uppercase tracking-tighter shadow-2xl hover:scale-105 active:scale-95 transition-all duration-700 flex items-center gap-4 md:gap-6 font-ui cursor-pointer"
                 >
-                  <span>ACEPTO LA PROPUESTA TÉCNICA</span>
-                  <Rocket className="w-8 h-8" />
+                  <span>ACEPTO LA PROPUESTA</span>
+                  <Rocket className="w-6 h-6 md:w-8 md:h-8" />
                 </button>
                 
                 <div className="text-center space-y-6">
