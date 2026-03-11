@@ -123,9 +123,18 @@ export const Scope = () => {
 
         <div className="grid lg:grid-cols-[340px_1fr] gap-16 items-start">
           
-          {/* Sidebar - MEJORADO: Usabilidad, Tamaño y Color */}
-          <div className="flex flex-col gap-3 sticky top-32">
-            <div className="flex items-center gap-3 mb-6 ml-6">
+          {/* Sidebar - Menú Horizontal en Móviles */}
+          <div 
+            className="flex flex-row lg:flex-col gap-3 sticky top-[3.5rem] md:top-20 lg:top-32 z-30 overflow-x-auto lg:overflow-visible pb-4 pt-4 lg:py-0 bg-white lg:bg-transparent -mx-4 px-4 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0 border-b border-gray-100 lg:border-none"
+            style={{ 
+              scrollbarWidth: 'none', 
+              msOverflowStyle: 'none',
+              WebkitOverflowScrolling: 'touch' 
+            }}
+          >
+            <style>{`.hide-scrollbar::-webkit-scrollbar { display: none; }`}</style>
+            
+            <div className="hidden lg:flex items-center gap-3 mb-6 ml-6">
                <Database className="w-5 h-5 text-black" />
                <p className="text-[12px] font-black text-black uppercase tracking-[0.4em] font-ui">Módulos</p>
             </div>
@@ -136,23 +145,23 @@ export const Scope = () => {
                   setActiveTab(tab.id);
                   const contentEl = document.getElementById('scope-content');
                   if (window.innerWidth < 1024 && contentEl) {
-                    contentEl.scrollIntoView({ behavior: 'smooth' });
+                    contentEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }
                 }}
-                className={`flex items-center justify-between gap-4 px-6 md:px-8 py-4 md:py-5 rounded-[4rem] transition-all duration-500 text-left relative group border ${
+                className={`flex items-center lg:justify-between gap-3 lg:gap-4 px-5 lg:px-8 py-3 lg:py-5 rounded-[4rem] transition-all duration-500 text-left relative group border shrink-0 ${
                   activeTab === tab.id 
-                    ? 'bg-black text-white border-black shadow-2xl scale-[1.02]' 
-                    : 'bg-transparent text-gray-700 border-transparent hover:bg-gray-50 hover:text-black'
+                    ? 'bg-black text-white border-black shadow-xl lg:shadow-2xl scale-100 lg:scale-[1.02]' 
+                    : 'bg-transparent text-gray-700 border-gray-200 lg:border-transparent hover:bg-gray-50 hover:text-black'
                 }`}
               >
-                <div className="flex items-center gap-4">
-                  <tab.icon className={`w-5 h-5 shrink-0 transition-colors duration-300 ${activeTab === tab.id ? 'text-[var(--color-lime)]' : 'text-gray-400 group-hover:text-black'}`} />
-                  <span className={`font-black uppercase tracking-widest transition-all duration-300 font-ui ${activeTab === tab.id ? 'text-[13px] text-white' : 'text-[11px] text-gray-600'}`}>
+                <div className="flex items-center gap-3 lg:gap-4">
+                  <tab.icon className={`w-4 h-4 lg:w-5 lg:h-5 shrink-0 transition-colors duration-300 ${activeTab === tab.id ? 'text-[var(--color-lime)]' : 'text-gray-400 group-hover:text-black'}`} />
+                  <span className={`font-black uppercase tracking-widest transition-all duration-300 font-ui whitespace-nowrap ${activeTab === tab.id ? 'text-[11px] lg:text-[13px] text-white' : 'text-[10px] lg:text-[11px] text-gray-600'}`}>
                     {tab.label}
                   </span>
                 </div>
                 {activeTab === tab.id && (
-                  <motion.div layoutId="scopeActiveDot" className="w-2.5 h-2.5 bg-[var(--color-lime)] rounded-full shadow-[0_0_15px_rgba(232,255,0,0.8)]" />
+                  <motion.div layoutId="scopeActiveDot" className="hidden lg:block w-2.5 h-2.5 bg-[var(--color-lime)] rounded-full shadow-[0_0_15px_rgba(232,255,0,0.8)]" />
                 )}
               </button>
             ))}
@@ -170,15 +179,15 @@ export const Scope = () => {
                 className="space-y-24"
               >
                 {/* Intro Section */}
-                <div className="space-y-6">
-                  <h2 className="text-2xl md:text-3xl font-black text-black leading-none uppercase tracking-tighter font-titles">{currentTab.label}</h2>
-                  <p className="text-xl text-gray-500 font-medium leading-relaxed max-w-4xl border-b border-gray-100 pb-12 italic font-body">
+                <div className="space-y-4 lg:space-y-6">
+                  <h2 className="text-3xl lg:text-3xl font-black text-black leading-none uppercase tracking-tighter font-titles">{currentTab.label}</h2>
+                  <p className="text-lg lg:text-xl text-gray-500 font-medium leading-relaxed max-w-4xl border-b border-gray-100 pb-8 lg:pb-12 italic font-body">
                     {currentTab.intro}
                   </p>
                 </div>
 
                 {/* Scope Items List */}
-                <div className="space-y-32">
+                <div className="space-y-20 lg:space-y-32">
                   {currentTab.items.map((item, idx) => (
                     <motion.div
                       key={item.id}
@@ -188,16 +197,16 @@ export const Scope = () => {
                       transition={{ delay: idx * 0.1, duration: 0.8 }}
                       className="group"
                     >
-                      <div className="grid md:grid-cols-[80px_1fr] gap-6 md:gap-8">
+                      <div className="grid lg:grid-cols-[80px_1fr] gap-6 lg:gap-8">
                         {/* Number Display */}
-                        <div className="flex flex-row md:flex-col items-center gap-4 md:gap-0">
-                          <span className="text-4xl md:text-5xl font-black text-gray-100 group-hover:text-[var(--color-lime)] transition-colors duration-700 select-none font-titles">
+                        <div className="flex flex-row lg:flex-col items-center gap-4 lg:gap-0">
+                          <span className="text-4xl lg:text-5xl font-black text-gray-200 lg:text-gray-100 group-hover:text-[var(--color-lime)] transition-colors duration-700 select-none font-titles">
                              {item.id.split('.').pop()}
                           </span>
-                          <div className="h-1 md:h-full w-full md:w-1.5 bg-gray-50 group-hover:bg-[var(--color-lime)]/20 transition-all duration-700 min-h-[4px] md:min-h-[60px] rounded-full mt-0 md:mt-4" />
+                          <div className="h-1 lg:h-full w-full lg:w-1.5 bg-gray-100 lg:bg-gray-50 group-hover:bg-[var(--color-lime)]/20 transition-all duration-700 min-h-[4px] lg:min-h-[60px] rounded-full mt-0 lg:mt-4" />
                         </div>
 
-                        <div className="space-y-10">
+                        <div className="space-y-8 lg:space-y-10">
                           <h4 className="text-xl md:text-2xl font-black text-black tracking-tighter leading-none group-hover:text-[var(--color-purple)] transition-colors font-ui uppercase">
                             {item.title}
                           </h4>
