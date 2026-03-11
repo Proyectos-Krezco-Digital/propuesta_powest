@@ -8,6 +8,7 @@ import { Support } from './components/sections/Support';
 import { Investment } from './components/sections/Investment';
 import { ActionPlan } from './components/sections/ActionPlan';
 import { Footer } from './components/layout/Footer';
+import { ScrollUpButton } from './components/ui/ScrollUpButton';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -20,8 +21,9 @@ function ScrollToTop() {
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-[var(--bg-primary)]">
+      <div className="min-h-screen bg-[var(--bg-primary)] relative">
         <ScrollToTop />
+        <ScrollUpButton />
         <Navbar />
         <main>
           <Routes>
