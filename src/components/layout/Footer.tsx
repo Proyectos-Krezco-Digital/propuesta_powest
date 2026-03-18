@@ -31,7 +31,7 @@ export const Footer = () => {
               <h3 className="text-[var(--color-lime)] font-black text-xs uppercase tracking-[0.4em] font-ui">
                 Agencia de Desarrollo y Automatizaciones IA
               </h3>
-              <p className="text-gray-400 text-base md:text-lg lg:text-xl leading-relaxed max-w-lg font-body font-medium italic border-l-2 border-[var(--color-lime)]/30 pl-6 md:pl-8 text-balance">
+              <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-lg font-body font-medium italic border-l-2 border-[var(--color-lime)]/30 pl-6 md:pl-8 text-balance">
                 Transformando la complejidad técnica en ecosistemas digitales de alto rendimiento. Expertos en arquitecturas Headless y despliegue inteligente con IA.
               </p>
             </div>
@@ -53,7 +53,7 @@ export const Footer = () => {
                 <li key={link.name}>
                   <Link 
                     to={link.href} 
-                    className="group flex items-center gap-2 text-gray-500 hover:text-white transition-all duration-300 font-bold text-sm tracking-wide font-ui"
+                    className="group flex items-center gap-2 text-gray-300 hover:text-white transition-all duration-300 font-bold text-sm tracking-wide font-ui"
                   >
                     <span className="w-0 group-hover:w-4 h-px bg-[var(--color-lime)] transition-all overflow-hidden opacity-0 group-hover:opacity-100"></span>
                     {link.name}
@@ -72,7 +72,7 @@ export const Footer = () => {
               <div className="space-y-3">
                 <a 
                   href="tel:+573218737931" 
-                  className="flex items-center gap-4 text-gray-400 hover:text-[var(--color-lime)] transition-colors group px-4 py-3 bg-white/5 rounded-2xl border border-white/5 hover:border-[var(--color-lime)]/20 shadow-sm"
+                  className="flex items-center gap-4 text-white hover:text-[var(--color-lime)] transition-colors group px-4 py-3 bg-white/5 rounded-2xl border border-white/5 hover:border-[var(--color-lime)]/20 shadow-sm"
                 >
                   <Phone className="w-4 h-4" />
                   <span className="font-bold text-sm font-ui">(+57) 321 873 7931</span>
@@ -81,7 +81,7 @@ export const Footer = () => {
                 
                 <a 
                   href="mailto:dazzleagency.ac@gmail.com" 
-                  className="flex items-center gap-4 text-gray-400 hover:text-[var(--color-purple)] transition-colors group px-4 py-3 bg-white/5 rounded-2xl border border-white/5 hover:border-[var(--color-purple)]/20 shadow-sm"
+                  className="flex items-center gap-4 text-white hover:text-[var(--color-purple)] transition-colors group px-4 py-3 bg-white/5 rounded-2xl border border-white/5 hover:border-[var(--color-purple)]/20 shadow-sm"
                 >
                   <Mail className="w-4 h-4 shrink-0" />
                   <span className="font-bold text-[11px] sm:text-[13px] font-ui truncate max-w-[170px] sm:max-w-none">dazzleagency.ac@gmail.com</span>
@@ -89,7 +89,7 @@ export const Footer = () => {
                 </a>
               </div>
 
-              <div className="pt-4 flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.2em] text-gray-600 font-ui">
+              <div className="pt-4 flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.2em] text-white/40 font-ui">
                 <Globe className="w-3 h-3 text-[var(--color-lime)]" />
                 Colombia / Remoto Global
               </div>
@@ -100,10 +100,10 @@ export const Footer = () => {
         {/* BOTTOM METADATA BAR */}
         <div className="pt-12 flex flex-col lg:flex-row justify-between items-center gap-10">
           <div className="space-y-2 text-center lg:text-left">
-            <p className="text-gray-600 text-[10px] font-black uppercase tracking-[0.3em] font-ui">
+            <p className="text-white/80 text-[10px] font-black uppercase tracking-[0.3em] font-ui">
               © 2026 iAnGo | Agencia de Desarrollo y Automatizaciones IA
             </p>
-            <p className="text-gray-800 text-[9px] font-bold uppercase tracking-[0.2em] font-ui">
+            <p className="text-white/40 text-[9px] font-bold uppercase tracking-[0.2em] font-ui">
               Todos los derechos reservados. High-Performance Engineering.
             </p>
           </div>

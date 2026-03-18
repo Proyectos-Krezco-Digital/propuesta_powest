@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Shield, Users, Calendar, Award, Building2, MapPin, Phone, Zap, Star, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { AudioPlayer } from '../ui/AudioPlayer';
 
 export const Hero = () => {
   return (
@@ -114,8 +115,13 @@ export const Hero = () => {
                   </h3>
                   <p className="text-[12px] font-black text-[var(--color-lime)] tracking-[0.4em] uppercase font-ui pt-2">Inteligencia e Ingeniería</p>
                 </div>
-                <p className="text-gray-400 text-base leading-relaxed max-w-[280px] font-medium border-l-4 border-[var(--color-lime)]/30 pl-8 italic font-body">
-                   Transformando el futuro digital de Powest mediante arquitecturas de alta precisión iAnGo.
+                
+                <div className="relative z-20">
+                  <AudioPlayer src="/audio/Resumen_Propuesta_iAnGo_Powest.m4a" />
+                </div>
+
+                <p className="text-gray-400 text-[11px] leading-relaxed max-w-[280px] font-medium border-l-2 border-[var(--color-lime)]/30 pl-6 italic font-body">
+                   Escucha el resumen ejecutivo de esta propuesta técnica.
                 </p>
               </div>
             </motion.div>

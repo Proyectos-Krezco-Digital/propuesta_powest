@@ -11,6 +11,7 @@ import { AutoAgent } from './components/sections/AutoAgent';
 import { AutoAgentInvestment } from './components/sections/AutoAgentInvestment';
 import { Footer } from './components/layout/Footer';
 import { ScrollUpButton } from './components/ui/ScrollUpButton';
+import { ChatBot } from './components/ui/ChatBot/ChatBot';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -26,6 +27,7 @@ function App() {
       <div className="min-h-screen bg-[var(--bg-primary)] relative overflow-x-clip w-full">
         <ScrollToTop />
         <ScrollUpButton />
+        <ChatBot />
         <Navbar />
         <main>
           <Routes>

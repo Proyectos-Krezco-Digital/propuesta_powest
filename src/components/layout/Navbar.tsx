@@ -29,7 +29,7 @@ export const Navbar = () => {
     { name: 'Inversión', href: '/inversion' },
     { name: 'Plan de Acción', href: '/plan-de-accion' },
     { 
-      name: 'Autoagente RAG', 
+      name: 'Autoagente AI', 
       href: '/autoagente',
       isBordered: true,
       subLinks: [

@@ -35,12 +35,12 @@ const tabs = [
   },
   { 
     id: 'core', 
-    label: '2. Arquitectura Core IA', 
+    label: '2. Arquitectura IA + Supabase', 
     icon: Cpu,
     intro: 'El "Cerebro Blindado" de la operación, impulsado por Inteligencia Artificial y arquitecturas Vectoriales Antialucinaciones.',
     items: [
       { id: '2.1', title: 'Orquestación y Enrutamiento Multicanal (n8n)', tech: 'Despliegue de n8n (Node-Based Workflow Automation) como núcleo de enrutamiento. Este middleware recibe Webhooks, invoca APIs de Inteligencia Artificial en tiempo real, controla la seguridad y ejecuta consultas sin embudos en la red.', corp: 'Utilizaremos un "director de orquesta" de última tecnología. Este servidor propio recibe cientos de mensajes simultáneos, los transfiere organizadamente a la IA para que los procese, y devuelve la respuesta al cliente correcto. Todo en milisegundos.' },
-      { id: '2.2', title: 'Agente Antialucinaciones: RAG (Autohospedado)', tech: 'Modelado riguroso de arquitectura RAG desplegando una Base de Datos Vectorial (PostgreSQL + pgvector) nativa dentro del mismo clúster de Dokploy. El Agente hará Semantic Search inyectando únicamente las 100 fichas técnicas y 30 manuales locales al Prompt.', corp: 'Nunca dejaremos que la Inteligencia Artificial invente información. Convertimos los manuales de Powest en la única fuente de la verdad corporativa. Al consultar sobre un equipo, el Agente busca exclusivamente en la bóveda documental inyectada en su propio servidor.' },
+      { id: '2.2', title: 'Agente Antialucinaciones: RAG + Supabase', tech: 'Modelado de arquitectura RAG utilizando Supabase (PostgreSQL + pgvector) como cerebro de datos persistente. El Agente hará Semantic Search inyectando fichas técnicas y manuales locales mediante indexación vectorial de alta velocidad.', corp: 'Nunca dejaremos que la Inteligencia Artificial invente información. Convertimos los manuales de Powest en la única fuente de la verdad corporativa, almacenada en una base de datos Supabase dedicada que garantiza rapidez y precisión absoluta.' },
       { id: '2.3', title: 'Procesamiento de Lenguaje Natural (NLP)', tech: 'Utilización de Modelos de Lenguaje Grande (LLMs) fundacionales (GPT-4o / Claude 3.5 Sonnet) en la capa conversacional. Garantiza memoria a corto plazo, comprensión de jergas y variaciones del lenguaje natural.', corp: 'A diferencia de los molestos "bots de opciones" (marque 1, marque 2), nuestro Agente conversa como un analista humano. Entiende errores de ortografía, audios o frases desordenadas y comprende perfectamente el contexto de lo que el cliente técnico le demanda.' }
     ]
   },
@@ -56,19 +56,30 @@ const tabs = [
     ]
   },
   { 
+    id: 'humana', 
+    label: '4. Gestión Humana & Datos', 
+    icon: Users2,
+    intro: 'La "Capa Humana" que garantiza que el Autoagente nunca trabaje a ciegas. Un entorno omnicanal para que su equipo supervise, intervenga y gestione cada conversación en tiempo real.',
+    items: [
+      { id: '4.1', title: 'Roles y Permisos (Admin vs Agentes)', tech: 'Configuración de Chatwoot Community Edition con segregación de roles. El perfil *Administrador* tiene control total sobre reportes y configuración, mientras que el *Agente* se enfoca exclusivamente en la atención y resolución de tickets.', corp: 'Ustedes deciden quién hace qué. Sus líderes pueden auditar métricas de desempeño, mientras que sus asesores comerciales o técnicos reciben solo los chats que el Autoagente les transfiere, manteniendo el orden operativo.' },
+      { id: '4.2', title: 'Historial y Trazabilidad de Auditoría', tech: 'Persistencia de conversaciones en base de datos PostgreSQL. Cada interacción del Autoagente queda registrada con marcas de tiempo y etiquetas de satisfacción. El equipo humano puede leer todo el historial antes de intervenir.', corp: 'Cero pérdida de información. Powest podrá ver exactamente qué preguntó el cliente y qué respondió la IA. Si un humano toma el control, ya sabe todo el contexto previo, evitando que el cliente tenga que repetirse.' },
+      { id: '4.3', title: 'Intervención Manual e Handoff Agresivo', tech: 'Implementación de disparadores en n8n que detectan palabras clave de frustración o solicitudes explícitas de un humano. El Autoagente se "pausa" automáticamente y notifica (Push/Email) al equipo de Powest para una toma de control inmediata.', corp: 'El Autoagente no es una isla; es un apoyo. Si detecta que un cliente está molesto o pide hablar con una persona, la IA se hace a un lado y le entrega la conversación a sus agentes humanos, enviando una alerta sonora para que no se pierda la venta.' }
+    ]
+  },
+  { 
     id: 'seguridad', 
-    label: '4. Gobernanza y Seguridad', 
+    label: '5. Gobernanza y Seguridad', 
     icon: ShieldCheck,
     intro: 'Privacidad blindada. El Agente Inteligente se conecta a los sistemas empresariales para generar valor bidireccional, garantizando protección de datos rigurosa.',
     items: [
-      { id: '4.1', title: 'Interoperabilidad API (ERP CRM)', tech: 'Despliegue de Tool Calling en n8n permitiendo al Agente IA integrarse directamente mediante autenticación robusta (OAuth2) a los endpoints del ERP y CRM de Powest para consultar o inyectar data.', corp: 'La Inteligencia Artificial no trabaja aislada. Puede consultar sus sistemas en vivo e indicar a un cliente: "Su garantía ya fue aprobada", o inyectar de inmediato un lead cualificado multinacional en su plataforma comercial para que cierre el contrato aceleradamente.' },
-      { id: '4.2', title: 'Autenticación Doble Factor (2FA) y Privacidad', tech: 'Cumplimiento normativo de protección de datos (RGPD). Autenticación de Doble Factor (2FA) para los accesos al entorno orquestador. Protección militar de API keys en variables de entorno segregadas y logs auditables.', corp: 'La confidencialidad es intransferible. Nadie, excepto sus líderes aprobados mediante código en su celular (2FA), podrá acceder a configuraciones técnicas o leer transcripciones. Blindamos al máximo la base de datos empresarial.' },
-      { id: '4.3', title: 'Usuarios Ilimitados y Nivel de Servicio (SLA 99.5%)', tech: 'Despliegue de Chatwoot Core y n8n en VPS propio, lo que elimina el cobro por asientos o licencias SaaS. Parametrización con roles: 1 Súper Administrador y Agentes/Supervisores ilimitados. SLA garantizado del 99.5%.', corp: 'Adiós a los cobros por "puesto de trabajo". Como el ecosistema es 100% de Powest (Caja de Cristal), podrán conectar a 3, a 10 o a 50 agentes humanos y supervisores en Chatwoot sin pagar un solo peso extra en licencias mensuales. Usuarios ilimitados, mismo costo operativo.' }
+      { id: '5.1', title: 'Persistencia y Memoria con Supabase', tech: 'Despliegue de capa de datos en Supabase. El Autoagente almacena contextos, perfiles de clientes y estados de procesos en PostgreSQL, permitiendo una inteligencia acumulativa y consultas históricas ultra-rápidas mediante APIs seguras.', corp: 'La Inteligencia Artificial no olvida lo importante. Al usar Supabase, el agente puede "recordar" preferencias de sus clientes B2B, inyectar leads cualificados inmediatamente en sus sistemas y mantener una base de datos sólida de toda la operación.' },
+      { id: '5.2', title: 'Autenticación Doble Factor (2FA) y Privacidad', tech: 'Cumplimiento normativo de protección de datos (RGPD). Autenticación de Doble Factor (2FA) para los accesos al entorno orquestador. Protección militar de API keys en variables de entorno segregadas y logs auditables.', corp: 'La confidencialidad es intransferible. Nadie, excepto sus líderes aprobados mediante código en su celular (2FA), podrá acceder a configuraciones técnicas o leer transcripciones. Blindamos al máximo la base de datos empresarial.' },
+      { id: '5.3', title: 'Usuarios Ilimitados (Cero Licencias)', tech: 'Despliegue de Chatwoot Core en VPS propio, lo que elimina el cobro por asientos. Parametrización con roles: Súper Administrador y Agentes/Supervisores ilimitados sin costos recurrentes por usuario.', corp: 'Como el ecosistema es 100% de Powest (Caja de Cristal), podrán conectar a 3, a 10 o a 50 asesores humanos en Chatwoot sin pagar un solo peso extra en licencias mensuales. Usuarios ilimitados, mismo costo operativo.' }
     ]
   },
   { 
     id: 'despliegue', 
-    label: '5. Plan de Despliegue', 
+    label: '6. Plan de Despliegue', 
     icon: Zap,
     intro: 'Implementación ágil, llave en mano y apoyada por expertos pos-lanzamiento. Transformamos la complejidad de IA generativa en una solución viva en pocas semanas.',
     items: [
@@ -124,7 +135,7 @@ export const AutoAgent = () => {
         >
           <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full bg-gray-50 border border-gray-100 text-[10px] font-black tracking-[0.2em] text-[var(--color-purple)] uppercase mb-6 shadow-sm font-ui">
             <Bot className="w-4 h-4 text-[var(--color-lime)]" />
-            <span>SOLUCIÓN: EXTENSIÓN AUTOAGENTE</span>
+            <span>SOLUCIÓN: AUTOAGENTE AI</span>
           </div>
           <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-[4.2rem] font-black tracking-tighter text-black leading-tight lg:leading-[1.05] font-titles uppercase break-words">
             EL INGENIERO VIRTUAL <br className="hidden md:block" />
