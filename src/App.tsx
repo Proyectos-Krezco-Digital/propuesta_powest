@@ -7,6 +7,8 @@ import { Scope } from './components/sections/Scope';
 import { Support } from './components/sections/Support';
 import { Investment } from './components/sections/Investment';
 import { ActionPlan } from './components/sections/ActionPlan';
+import { AutoAgent } from './components/sections/AutoAgent';
+import { AutoAgentInvestment } from './components/sections/AutoAgentInvestment';
 import { Footer } from './components/layout/Footer';
 import { ScrollUpButton } from './components/ui/ScrollUpButton';
 
@@ -34,6 +36,8 @@ function App() {
             <Route path="/soporte" element={<Support />} />
             <Route path="/inversion" element={<Investment />} />
             <Route path="/plan-de-accion" element={<ActionPlan />} />
+            <Route path="/autoagente" element={<AutoAgent />} />
+            <Route path="/autoagente-inversion" element={<AutoAgentInvestment />} />
           </Routes>
         </main>
         <Footer />
