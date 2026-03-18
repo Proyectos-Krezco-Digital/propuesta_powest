@@ -25,7 +25,7 @@ const plans = [
     subtitle: 'Evolución Activa',
     price: '$1.500.000',
     period: 'COP/Mes',
-    description: 'EL MEJOR. Para PharmaPLus que está inciando y en crecimiento que necesitan mejoras constantes e implementaciones ganadoras',
+    description: 'EL MEJOR. Para Powest que está inciando y en crecimiento que necesitan mejoras constantes e implementaciones ganadoras',
     features: [
       'Hasta 50 horas de desarrollo y soporte mensual',
       'Mantenimiento + Mejoras continuas (CRO, SEO técnico, ajustes de UI)',

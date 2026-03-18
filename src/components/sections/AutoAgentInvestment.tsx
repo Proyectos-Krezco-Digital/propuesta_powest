@@ -321,41 +321,42 @@ export const AutoAgentInvestment = () => {
                        </div>
                     </div>
 
-                    {/* Section 3 (Resumen) */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-4">
-                      <div className="bg-gray-50 rounded-3xl p-6 md:p-8 space-y-4 shadow-sm border border-gray-100">
-                        <h4 className="font-black text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-ui text-[var(--color-purple)]">Cálculo por Interacción Única</h4>
-                        <p className="text-[13px] font-medium text-gray-600 font-body leading-relaxed">Con 300 documentos, la DB busca fragmentos exactos (~2,000 tokens) y se los inyecta al LLM (Input), evitando procesar todo cada vez.</p>
-                        <ul className="space-y-3 pt-4 border-t border-gray-200">
-                          <li className="flex justify-between items-center text-[13px]"><span className="text-gray-500">Input Consumido:</span> <span className="font-bold text-black border-b border-gray-200 border-dashed">~3,000 tokens</span></li>
-                          <li className="flex justify-between items-center text-[13px]"><span className="text-gray-500">Costo (Input):</span> <span className="font-bold text-black">$0.0015 USD</span></li>
-                          <li className="flex justify-between items-center text-[13px]"><span className="text-gray-500">Costo (Salida):</span> <span className="font-bold text-black">$0.0006 USD</span></li>
-                          <li className="flex justify-between items-center pt-3 border-t border-gray-200"><span className="font-black text-[10px] uppercase font-ui tracking-wider text-black">Total por Interacción:</span> <span className="font-black text-[var(--color-lime)] bg-black px-3 py-1.5 rounded-md text-xs">$0.0021 USD <span className="text-gray-400 font-medium italic text-[10px] ml-1">(~$8 COP)</span></span></li>
-                        </ul>
+                      {/* Section 3 (Resumen) */}
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-4">
+                        <div className="bg-gray-50 rounded-3xl p-6 md:p-8 space-y-4 shadow-sm border border-gray-100">
+                          <h4 className="font-black text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-ui text-[var(--color-purple)]">Cálculo por Interacción Única</h4>
+                          <p className="text-[13px] font-medium text-gray-600 font-body leading-relaxed leading-relaxed font-body">Considerando que el Agente inyecta historial, instrucciones de marca y fragmentos de su base de conocimientos en cada respuesta.</p>
+                          <ul className="space-y-3 pt-4 border-t border-gray-200">
+                            <li className="flex justify-between items-center text-[13px]"><span className="text-gray-500">Input Contextual (RAG):</span> <span className="font-bold text-black border-b border-gray-200 border-dashed">~8,000 tokens</span></li>
+                            <li className="flex justify-between items-center text-[13px]"><span className="text-gray-500">Costo (Inferencia Input):</span> <span className="font-bold text-black">$0.0040 USD</span></li>
+                            <li className="flex justify-between items-center text-[13px]"><span className="text-gray-500">Costo (Inferencia Output):</span> <span className="font-bold text-black">$0.0030 USD</span></li>
+                            <li className="flex justify-between items-center pt-3 border-t border-gray-200"><span className="font-black text-[10px] uppercase font-ui tracking-wider text-black">Total por Interacción:</span> <span className="font-black text-[var(--color-lime)] bg-black px-3 py-1.5 rounded-md text-xs">$0.0070 USD <span className="text-gray-400 font-medium italic text-[10px] ml-1">(~$28 COP)</span></span></li>
+                          </ul>
+                        </div>
+
+                        <div className="bg-black text-white rounded-3xl p-6 md:p-8 space-y-6 shadow-xl relative overflow-hidden flex flex-col justify-between">
+                          <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-lime)] rounded-full blur-[80px] opacity-20" />
+                          <div>
+                             <h4 className="font-black text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-ui text-[var(--color-lime)] relative z-10 mb-2">Simulación Mensual Real</h4>
+                             <p className="text-[13px] font-medium text-gray-300 font-body leading-relaxed relative z-10 italic">Escenario: Si el Agente IA responde a 2,500 consultas profundas al mes:</p>
+                          </div>
+                          <ul className="space-y-3 relative z-10 w-full mb-6 text-[13px]">
+                            <li className="flex justify-between items-center"><span className="text-gray-400">WhatsApp (Conversaciones Marketing):</span> <span className="font-bold text-[var(--color-lime)]">~$7.50 USD</span></li>
+                            <li className="flex justify-between items-center"><span className="text-gray-400">Tokens Gemini API (Uso Intensivo):</span> <span className="font-bold text-[var(--color-lime)]">~$17.50 USD</span></li>
+                            <li className="flex justify-between items-center"><span className="text-gray-400">DB Vectorial y Servidor:</span> <span className="font-bold text-white">$0</span></li>
+                          </ul>
+                          <div className="pt-5 border-t border-white/20 relative z-10 mt-auto">
+                             <div className="flex justify-between items-end">
+                               <p className="font-black text-[10px] uppercase tracking-widest font-ui text-[var(--color-lime)]">Inversión Mensual Proyectada:</p>
+                               <div className="text-right">
+                                  <p className="font-black text-3xl font-titles tracking-tighter text-white">$25.00 USD <span className="text-[10px] font-medium text-gray-400 font-ui align-middle ml-1">/ MES</span></p>
+                                  <p className="text-[10px] font-bold text-gray-400 italic font-ui">~$105,000 COP AL T.R.M.</p>
+                               </div>
+                             </div>
+                          </div>
+                        </div>
                       </div>
 
-                      <div className="bg-black text-white rounded-3xl p-6 md:p-8 space-y-6 shadow-xl relative overflow-hidden flex flex-col justify-between">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-lime)] rounded-full blur-[80px] opacity-20" />
-                        <div>
-                           <h4 className="font-black text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-ui text-[var(--color-lime)] relative z-10 mb-2">Simulación Mensual Real</h4>
-                           <p className="text-[13px] font-medium text-gray-300 font-body leading-relaxed relative z-10 italic">Escenario: Si el Agente IA responde a 1,000 consultas profundas al mes:</p>
-                        </div>
-                        <ul className="space-y-3 relative z-10 w-full mb-6 text-[13px]">
-                          <li className="flex justify-between items-center"><span className="text-gray-400">WhatsApp (entrante):</span> <span className="font-bold text-white">$0</span></li>
-                          <li className="flex justify-between items-center"><span className="text-gray-400">Tokens Gemini API:</span> <span className="font-bold text-[var(--color-lime)]">~$2.10 USD</span></li>
-                          <li className="flex justify-between items-center"><span className="text-gray-400">DB Vectorial:</span> <span className="font-bold text-white">$0</span></li>
-                        </ul>
-                        <div className="pt-5 border-t border-white/20 relative z-10 mt-auto">
-                           <div className="flex justify-between items-end">
-                             <p className="font-black text-[10px] uppercase tracking-widest font-ui text-[var(--color-lime)]">Total Tokens Netos:</p>
-                             <div className="text-right">
-                                <p className="font-black text-3xl font-titles tracking-tighter text-white">$2.10 USD <span className="text-[10px] font-medium text-gray-400 font-ui align-middle ml-1">/ MES</span></p>
-                                <p className="text-[10px] font-bold text-gray-400 italic font-ui">~$8,500 COP AL T.R.M.</p>
-                             </div>
-                           </div>
-                        </div>
-                      </div>
-                    </div>
 
                   </div>
                 </div>

@@ -46,31 +46,32 @@ export const Navbar = () => {
   };
 
   return (
-    <motion.nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-md border-b border-gray-100 py-2 shadow-sm' 
-          : 'bg-transparent py-4'
-      }`}
-    >
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-        <div className="flex justify-between items-center h-14 md:h-16">
-          {/* Logo */}
-          <Link to="/" className="flex-shrink-0 flex items-center group relative">
-            <span className="text-2xl md:text-3xl font-extrabold italic tracking-tighter text-black font-logo relative z-10">
-              iAnGo
-              <motion.div 
-                initial={{ width: 0 }}
-                animate={{ width: '40%' }}
-                className="absolute -bottom-1 right-0 h-1 bg-[var(--color-lime)] -z-10 rounded-full"
-              />
-            </span>
-          </Link>
+    <>
+      <motion.nav
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          isScrolled 
+            ? 'bg-white/95 backdrop-blur-md border-b border-gray-100 py-2 shadow-sm' 
+            : 'bg-transparent py-4'
+        }`}
+      >
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+          <div className="flex justify-between items-center h-14 md:h-16">
+            {/* Logo */}
+            <Link to="/" className="flex-shrink-0 flex items-center group relative">
+              <span className="text-2xl md:text-3xl font-extrabold italic tracking-tighter text-black font-logo relative z-10">
+                iAnGo
+                <motion.div 
+                  initial={{ width: 0 }}
+                  animate={{ width: '40%' }}
+                  className="absolute -bottom-1 right-0 h-1 bg-[var(--color-lime)] -z-10 rounded-full"
+                />
+              </span>
+            </Link>
 
-          {/* Desktop Nav - Poppins Style */}
-          <div className="hidden md:flex items-center gap-x-1 lg:gap-x-2">
-            {navLinks.map((link) => (
-              <div key={link.name} className="relative group">
+            {/* Desktop Nav - Poppins Style */}
+            <div className="hidden md:flex items-center gap-x-1 lg:gap-x-2">
+              {navLinks.map((link) => (
+                <div key={link.name} className="relative group">
                   <Link
                     to={link.href}
                     className={`px-3 py-2 text-[11px] lg:text-[12px] font-black uppercase tracking-widest transition-all duration-300 font-ui block flex items-center gap-1 whitespace-nowrap ${
@@ -83,62 +84,63 @@ export const Navbar = () => {
                   >
                     {link.name}
                   </Link>
-                {link.subLinks && (
-                  <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 bg-white border shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden ${
-                    link.isBordered ? 'border-[var(--color-lime)] rounded-none' : 'border-gray-100 rounded-3xl'
-                  }`}>
-                    <div className="py-2">
-                      {link.subLinks.map((sub) => (
-                        <Link
-                          key={sub.name}
-                          to={sub.href}
-                          className={`block px-5 py-3 text-[10px] font-bold uppercase tracking-widest transition-colors ${
-                            location.pathname === sub.href
-                              ? 'bg-[var(--color-lime)] text-black'
-                              : 'text-gray-500 hover:text-[var(--color-purple)] hover:bg-gray-50'
-                          }`}
-                        >
-                          {sub.name}
-                        </Link>
-                      ))}
+                  {link.subLinks && (
+                    <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 bg-white border shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden ${
+                      link.isBordered ? 'border-[var(--color-lime)] rounded-none' : 'border-gray-100 rounded-3xl'
+                    }`}>
+                      <div className="py-2">
+                        {link.subLinks.map((sub) => (
+                          <Link
+                            key={sub.name}
+                            to={sub.href}
+                            className={`block px-5 py-3 text-[10px] font-bold uppercase tracking-widest transition-colors ${
+                              location.pathname === sub.href
+                                ? 'bg-[var(--color-lime)] text-black'
+                                : 'text-gray-500 hover:text-[var(--color-purple)] hover:bg-gray-50'
+                            }`}
+                          >
+                            {sub.name}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+                  )}
+                </div>
+              ))}
+            </div>
 
-          {/* Right Action - Poppins Style */}
-          <div className="hidden md:flex items-center gap-2">
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => setIsPromoModalOpen(true)}
-              className="bg-[var(--color-purple)] text-white text-[11px] font-black tracking-widest uppercase rounded-full px-5 py-2.5 hover:bg-[var(--color-purple)]/90 transition-all border border-transparent font-ui shadow-lg whitespace-nowrap"
-            >
-              Promo
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="bg-black text-[var(--color-lime)] text-[11px] font-black tracking-widest uppercase rounded-full px-5 py-2.5 hover:bg-gray-900 transition-all border border-black font-ui shadow-lg whitespace-nowrap"
-              onClick={() => window.open('https://wa.me/573218737931', '_blank')}
-            >
-              Consultar Proyecto
-            </motion.button>
-          </div>
+            {/* Right Action - Poppins Style */}
+            <div className="hidden md:flex items-center gap-2">
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => setIsPromoModalOpen(true)}
+                className="bg-[var(--color-purple)] text-white text-[11px] font-black tracking-widest uppercase rounded-full px-5 py-2.5 hover:bg-[var(--color-purple)]/90 transition-all border border-transparent font-ui shadow-lg whitespace-nowrap"
+              >
+                Promo
+              </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="bg-black text-[var(--color-lime)] text-[11px] font-black tracking-widest uppercase rounded-full px-5 py-2.5 hover:bg-gray-900 transition-all border border-black font-ui shadow-lg whitespace-nowrap"
+                onClick={() => window.open('https://wa.me/573218737931', '_blank')}
+              >
+                Consultar Proyecto
+              </motion.button>
+            </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-black focus:outline-none p-2 rounded-lg bg-gray-50"
-            >
-              {isOpen ? <X size={20} /> : <Menu size={20} />}
-            </button>
+            {/* Mobile menu button */}
+            <div className="md:hidden flex items-center">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-black focus:outline-none p-2 rounded-lg bg-gray-50"
+              >
+                {isOpen ? <X size={20} /> : <Menu size={20} />}
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      </motion.nav>
 
       {/* Mobile Menu */}
       <AnimatePresence>
@@ -147,7 +149,7 @@ export const Navbar = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-100 shadow-xl"
+            className="md:hidden fixed top-[64px] left-0 right-0 bg-white border-b border-gray-100 shadow-xl z-40 overflow-hidden"
           >
             <div className="px-4 py-6 space-y-1">
               {navLinks.map((link) => (
@@ -271,8 +273,16 @@ export const Navbar = () => {
                             <span className="font-black text-black text-lg">$ 7.800.000</span>
                           </div>
 
+                          <div className="flex justify-between items-center pb-5 border-b border-gray-200">
+                            <div>
+                               <p className="text-black font-black text-sm uppercase font-ui">3. Fee Mensual Operación & Soporte</p>
+                               <p className="text-xs text-gray-500 italic mt-0.5">Gestión de Ecosistema Dokploy + Soporte Técnico</p>
+                            </div>
+                            <span className="font-black text-[var(--color-purple)] text-lg">$ 1.200.000 / Mes</span>
+                          </div>
+
                           <div className="flex justify-between items-center py-2">
-                            <span className="text-gray-400 font-bold font-ui uppercase text-[10px] tracking-widest">Subtotal Arquitectura Modular</span>
+                            <span className="text-gray-400 font-bold font-ui uppercase text-[10px] tracking-widest">Inversión Setup Modular (Sin Promo)</span>
                             <span className="font-bold text-gray-400 line-through decoration-red-500/50 decoration-2">~ $ 22.300.000 COP</span>
                           </div>
                        </div>
@@ -316,6 +326,8 @@ export const Navbar = () => {
           </>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </>
   );
 };
+
+export default Navbar;

@@ -5,32 +5,32 @@ const benchmarks = [
   {
     feature: 'Velocidad de Carga (LCP)',
     standard: '2.5s - 4.0s',
-    pharmaplus: '0.8s - 1.2s',
-    winner: 'pharmaplus',
+    powest: '0.8s - 1.2s',
+    winner: 'powest',
   },
   {
     feature: 'Límite de Productos',
     standard: '~500 SKUs (Lento)',
-    pharmaplus: 'Escalabilidad Ilimitada',
-    winner: 'pharmaplus',
+    powest: 'Escalabilidad Ilimitada',
+    winner: 'powest',
   },
   {
     feature: 'Control de Datos',
     standard: 'Dependencia de Proveedor',
-    pharmaplus: 'Propiedad Total (Supabase)',
-    winner: 'pharmaplus',
+    powest: 'Propiedad Total (Supabase)',
+    winner: 'powest',
   },
   {
     feature: 'Seguridad',
     standard: 'Plugins Vulnerables',
-    pharmaplus: 'Serverless Protegido',
-    winner: 'pharmaplus',
+    powest: 'Serverless Protegido',
+    winner: 'powest',
   },
   {
     feature: 'Infraestructura',
     standard: 'Monolítica',
-    pharmaplus: 'Headless (Edge)',
-    winner: 'pharmaplus',
+    powest: 'Headless (Edge)',
+    winner: 'powest',
   },
 ];
 
@@ -54,7 +54,7 @@ export const Benchmark = () => {
             transition={{ delay: 0.1 }}
             className="mt-2 text-4xl font-bold text-gray-900"
           >
-            PharmaPlus vs. Estándar
+            Powest vs. Estándar
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -77,7 +77,7 @@ export const Benchmark = () => {
           <div className="grid grid-cols-3 bg-gray-50/80 p-6 border-b border-gray-100 font-bold text-gray-900">
             <div className="col-span-1">Característica</div>
             <div className="col-span-1 text-center text-gray-500">E-commerce Estándar</div>
-            <div className="col-span-1 text-center text-blue-600">PharmaPlus (Headless)</div>
+            <div className="col-span-1 text-center text-blue-600">Powest (Headless)</div>
           </div>
           <div className="divide-y divide-gray-100">
             {benchmarks.map((item, index) => (
@@ -91,8 +91,8 @@ export const Benchmark = () => {
                    {item.standard}
                 </div>
                 <div className="col-span-1 text-center text-blue-700 font-bold flex justify-center items-center gap-2 bg-blue-50/50 py-2 rounded-lg">
-                   {item.winner === 'pharmaplus' ? <CheckCircle2 className="w-5 h-5 text-blue-600"/> : <XCircle className="w-5 h-5 text-red-300"/>}
-                   {item.pharmaplus}
+                   {item.winner === 'powest' ? <CheckCircle2 className="w-5 h-5 text-blue-600"/> : <XCircle className="w-5 h-5 text-red-300"/>}
+                   {item.powest}
                 </div>
               </div>
             ))}

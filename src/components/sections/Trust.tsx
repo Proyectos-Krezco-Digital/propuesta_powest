@@ -40,7 +40,7 @@ export const Trust = () => {
               {[
                 {
                   title: "Conocimiento de Dominio",
-                  desc: "Entiendo las 'fórmulas' de OrbisFarma y Credibanco.",
+                  desc: "Entiendo las 'fórmulas' de integración de SAP y Pasarelas Regionales.",
                   icon: Brain
                 },
                 {
@@ -119,7 +119,7 @@ export const Trust = () => {
                   className="absolute -bottom-10 -right-4 md:right-0 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 max-w-xs z-20"
                 >
                   <p className="text-black font-medium italic mb-4">
-                    "PharmaPlus es un <span className="bg-[var(--color-lime)] px-1">Ferrari tecnológico</span>. Necesita alta ingeniería."
+                    "Powest es un <span className="bg-[var(--color-lime)] px-1">Ferrari tecnológico</span>. Necesita alta ingeniería."
                   </p>
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-xl bg-[var(--color-lime)] flex items-center justify-center shrink-0 shadow-sm">

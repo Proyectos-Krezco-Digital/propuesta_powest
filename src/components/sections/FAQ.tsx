@@ -6,32 +6,32 @@ import { MaxWidthWrapper } from '../layout/MaxWidthWrapper';
 
 const faqs = [
   {
-    question: "¿Por qué PharmaPlus necesita un mantenimiento especializado en Headless y no un soporte estándar?",
-    answer: "Una arquitectura Headless (React + Node + Supabase) desacopla el frontend del backend. Un soporte estándar de WooCommerce no tiene la capacidad de rastrear errores de sincronización de API, fugas de memoria en el renderizado o inconsistencias en la base de datos Supabase. Sin este mantenimiento, el riesgo de 'órdenes fantasma' y caídas silenciosas aumenta exponencialmente."
+    question: "¿Por qué el ecosistema de Powest necesita un mantenimiento especializado en Dokploy y no un soporte estándar?",
+    answer: "Una arquitectura Headless (Next.js + Supabase + SAP) requiere gestión de contenedores Docker y optimización de base de datos vectorial. Un soporte estándar no tiene la capacidad de rastrear errores de sincronización de API profunda, fugas de memoria en el renderizado o inconsistencias en la base de datos Supabase. Sin este mantenimiento, el riesgo de fallos en el checkout y caídas silenciosas aumenta exponencialmente."
   },
   {
-    question: "¿Qué riesgos corremos si no auditamos el stock entre WooCommerce y Supabase mensualmente?",
-    answer: "El desajuste de inventario es el error más costoso en e-commerce. Sin la auditoría mensual incluida en la Opción B, PharmaPlus corre el riesgo de vender productos sin stock real, generando devoluciones, mala reputación y bloqueos en pasarelas de pago por disputas."
+    question: "¿Qué riesgos corremos si no auditamos el stock entre SAP Business One y el E-commerce mensualmente?",
+    answer: "El desajuste de inventario es el error más costoso en operaciones B2B. Sin la auditoría mensual, el ecosistema de Powest corre el riesgo de vender productos sin stock real o con precios desactualizados, generando reprocesos logísticos y afectando la relación con los distribuidores."
   },
   {
-    question: "¿Cómo se justifica la inversión de $1.500.000 (Opción B) frente a contratar por hora?",
-    answer: "La tarifa por hora suelta es de $65.000. La Opción B ofrece hasta 50 horas, lo que reduce el costo real a $30.000/hora, un ahorro del 53%. Además, incluye monitoreo preventivo 24/7 que evita caídas que costarían millones en ventas perdidas, algo que el pago por hora reactivo no cubre."
+    question: "¿Cómo se justifica la inversión del Fee Mensual de $1.200.000 frente a contratar por hora?",
+    answer: "La tarifa de especialista por hora suelta es de $100.000. El fee mensual garantiza disponibilidad inmediata y monitoreo preventivo 24/7. Este modelo proactivo evita caídas críticas que costarían millones en ventas perdidas por inactividad del Autoagente o el B2B, algo que el pago por hora reactivo no puede cubrir."
   },
   {
-    question: "¿Qué garantiza que el tiempo de respuesta de 2-8 horas se cumpla en emergencias?",
-    answer: "En la Opción B, establecemos un SLA (Acuerdo de Nivel de Servicio) contractual. Tengo herramientas de monitoreo en tiempo real conectadas a mi dispositivo personal. Si el servidor cae o el checkout falla, recibo una alerta inmediata para intervenir, asegurando la continuidad de las ventas."
+    question: "¿Qué garantiza que el tiempo de respuesta se cumpla en emergencias críticas?",
+    answer: "Establecemos un SLA (Acuerdo de Nivel de Servicio) contractual. Contamos con herramientas de monitoreo en tiempo real conectadas directamente a nuestro equipo de ingeniería. Si el servidor cae o la integración con SAP se interrumpe, recibimos una alerta inmediata para intervenir sin esperar a un ticket de soporte."
   },
   {
-    question: "¿Las 'Mejoras Continuas' de la Opción B incluyen desarrollo de nuevas funcionalidades?",
-    answer: "Sí. A diferencia de un mantenimiento pasivo, la Opción B permite usar la bolsa de horas para implementar mejoras de UX, optimización de velocidad (Core Web Vitals) o nuevas secciones promocionales. No es solo 'mantener que no se caiga', es 'hacer que venda más'."
+    question: "¿Las 'Mejoras Continuas' incluyen evolución del Autoagente AI?",
+    answer: "Sí. El fee no es solo para que 'no se caiga'. Incluye el re-entrenamiento del Autoagente con nuevos documentos, optimización de prompts y ajustes en la lógica de cierre de ventas por WhatsApp según la retroalimentación del mercado regional."
   },
   {
-    question: "¿Qué sucede con la seguridad de los datos de los pacientes en esta arquitectura?",
-    answer: "La seguridad es crítica. El plan incluye la aplicación mensual de parches de seguridad en todas las capas (Frontend, Backend, Base de Datos). Sin esto, las librerías desactualizadas son puertas traseras para ataques que podrían comprometer la base de datos de clientes de PharmaPlus."
+    question: "¿Qué sucede con la seguridad de la información corporativa en esta arquitectura?",
+    answer: "La seguridad es nuestra prioridad. Al usar una nube privada administrada por Dokploy, los datos de Powest no están en 'la nube pública' de un SaaS compartido. Aplicamos parches de seguridad mensuales en todas las capas para blindar la integración con su ERP."
   },
   {
-    question: "¿Si no usamos todas las horas del mes, se acumulan?",
-    answer: "Las horas son recursos reservados exclusivamente para PharmaPlus cada mes para garantizar disponibilidad. No son acumulables, lo que nos obliga a ser proactivos: si no hay fallos, usaremos ese tiempo en optimizar el código y mejorar la conversión para asegurar que siempre reciban valor por su inversión."
+    question: "¿Si no usamos todas las horas de soporte del mes, se acumulan?",
+    answer: "Las horas son recursos de ingeniería reservados exclusivamente para Powest cada mes para garantizar arranque inmediato. No son acumulables, lo que nos impulsa a la proactividad: si no hay fallos, usamos ese tiempo en optimizar el SEO técnico y la velocidad de respuesta para asegurar que siempre reciban el máximo retorno por su inversión."
   }
 ];
 
@@ -53,7 +53,7 @@ export const FAQ = () => {
                 Preguntas Frecuentes & <span className="text-[var(--color-lime)] bg-black px-2">Garantías</span>
               </h2>
               <p className="text-gray-600 text-lg mb-8">
-                Respuestas técnicas sobre la urgencia y el alcance del servicio de mantenimiento para la infraestructura de PharmaPlus.
+                Respuestas técnicas sobre el alcance y la gestión del ecosistema de ingeniería para Powest.
               </p>
               
               <div className="p-6 bg-black rounded-2xl border border-gray-800 shadow-xl">

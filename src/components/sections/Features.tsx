@@ -12,22 +12,22 @@ const features = [
   },
   {
     icon: Truck,
-    title: 'Logística de Última Milla',
-    description: 'Integración avanzada con OrbisFarma. Cálculo dinámico de fletes y lógica crítica de Cadena de Frío.',
+    title: 'Logística B2B',
+    description: 'Integración avanzada con SAP Business One. Cálculo dinámico de fletes y lógica crítica de ruteo regional.',
     color: 'text-blue-500',
     bg: 'bg-blue-50',
   },
   {
     icon: ShieldCheck,
     title: 'Pagos Blindados',
-    description: 'Integración nativa con Credibanco y Wompi. Firmas criptográficas y prevención de fraude en tiempo real.',
+    description: 'Integración nativa con Pasarelas Regionales. Firmas criptográficas y prevención de fraude en tiempo real.',
     color: 'text-purple-500',
     bg: 'bg-purple-50',
   },
   {
     icon: HeartPulse,
-    title: 'Experiencia Farmacéutica',
-    description: 'Servicios de valor como Pastillero Digital (Pillbox) y validaciones de seguridad médica (Captcha).',
+    title: 'Experiencia B2B',
+    description: 'Servicios de valor como Cotizador por WhatsApp y validaciones de seguridad empresarial.',
     color: 'text-red-500',
     bg: 'bg-red-50',
   },
@@ -41,7 +41,7 @@ const features = [
   {
     icon: Lock,
     title: 'Seguridad y Compliance',
-    description: 'Arquitectura Serverless protegida. Manejo de datos sensibles cumpliendo normativas de salud.',
+    description: 'Arquitectura Serverless protegida. Manejo de datos sensibles cumpliendo normativas internacionales.',
     color: 'text-teal-500',
     bg: 'bg-teal-50',
   },
@@ -76,7 +76,7 @@ export const Features = () => {
             transition={{ delay: 0.2 }}
             className="mt-4 text-xl text-gray-600"
           >
-            El valor real de PharmaPlus reside en estas implementaciones personalizadas de alta ingeniería.
+            El valor real de Powest reside en estas implementaciones personalizadas de alta ingeniería.
           </motion.p>
         </div>
 
